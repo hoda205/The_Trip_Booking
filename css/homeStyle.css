@@ -1,0 +1,264 @@
+:root{
+    --orange: rgb(248, 112, 96);
+    --dark-blue: rgb(39, 38, 53);
+    --gray: #ffffffbf;
+}
+
+/* =============Reset Styles ============= */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+}
+body{
+    font-family: "Roboto", sans-serif;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+/* =============Global Styles ============= */
+
+/* ====Section==== */
+.container{
+    width: 95%;
+    margin: 0 auto;
+}
+.befor-title{
+    font-size: 0.875rem;
+    color: var(--dark-blue);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+.befor-title::before{
+    content: "";
+    display: inline-block;
+    width: 30px;
+    height: 2px;
+    margin-right: 1rem;
+    background-color: var(--dark-blue);
+    vertical-align: middle;
+}
+.title{
+    font-size: 2.5rem;
+    margin: .5rem 0;
+    line-height: 1.2;
+}
+.desc{
+    font-size: 1.125rem;
+    margin: 1.5rem 0 1.8rem 0;
+    line-height: 1.5;
+}
+
+/* ====Button Styles=== */
+.btn{
+    display: inline-block;
+    position: relative;
+    background-color: transparent;
+    color: white;
+    text-transform: uppercase;
+    border-style: none;
+    font-size: 1rem;
+    padding: .75rem 2rem;
+    border-radius: 0.25rem;
+    overflow: hidden;
+}
+.btn::before,
+.btn::after{
+    content: "";
+    display: inline-block;
+    position: absolute;
+    border: 2px solid white;
+    width: 7%;
+    top: 0 ;
+    bottom: 0;
+}
+.btn::before{
+    border-right-color: transparent !important;
+    border-radius: 0.25rem 0 0 0.25rem;
+    left: 0%;
+}
+.btn::after{
+    border-left-color: transparent !important;
+    border-radius: 0 0.25rem 0.25rem 0;
+    right: 0%;
+}
+.btn .btn-befor,
+.btn .btn-after{
+    position: absolute;
+    display: inline-block;
+    width: 49%;
+    border: 1px solid white;
+    border-top-left-radius: 0.25rem;
+    transition: transform 0.3s ease-in-out , border-color 0.3s ease-in-out , color 0.3s ease-in-out ;
+}
+.btn .btn-befor{
+    left: 50%;
+    transform: translateX(150%);
+    border-top-right-radius: 0.25rem;
+}
+.btn .btn-after{
+    right: 50%;
+    transform: translateX(-150%);
+    border-top-left-radius: 0.25rem;
+}
+
+.btn span:nth-of-type(2),
+.btn span:nth-of-type(3){
+    top: 0%;
+}
+.btn span:first-of-type,
+.btn span:last-of-type{
+    bottom: 0%;
+}
+.btn:hover .btn-befor,
+.btn:hover .btn-after{
+    transform: translateX(0);
+    border-color: var(--orange) !important;
+}
+.btn:hover::before,
+.btn:hover::after{
+    border-color: var(--orange) !important;
+}
+.btn:hover:after{
+    border-left-color: transparent !important;
+}
+.btn:hover::before{ 
+    border-right-color: transparent !important;
+}
+
+.btn:hover{
+    color: var(--orange);
+}
+/* ====End Section==== */
+
+.position-relative{
+    position: relative;
+}
+.position-absolute{
+    position: absolute;
+}
+.text-white{
+    color: #fff;
+}
+.text-orange{
+    color: var(--orange);
+}
+.text-dark-blue{
+    color: var(--dark-blue);
+}
+.text-gray{
+    color: var(--gray);
+}
+.bg-dark-blue{
+    background-color: var(--dark-blue);
+}
+.text-center{
+    text-align: center;
+}
+.rounded{
+    border-radius: 0.25rem;
+}
+.py{
+    padding: 6.5rem 0;
+}
+.d-flex{
+    display: flex;
+}
+.cover{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* =============Custom Styles ============= */
+
+/* ======== Start Hero Section======== */
+.hero-sec{
+    height: 70vh;
+}
+.hero-sec video{
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+.hero-sec > div{
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.hero-sec div h1{
+    font-size: 3.5rem;
+}
+.hero-sec div p{
+    font-size: 1.25rem;
+}
+.hero-sec div div {
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+.hero-sec div div a{
+    border: none;
+    font-size: 1rem;
+    padding: 0.3rem 0.8rem;
+}
+.hero-sec div div a:last-child{
+    background-color: var(--orange);
+}
+/* ======== End Hero Section======== */
+/* ======== Start Customize Section======== */
+.cutom .befor-title::before{
+    background-color: var(--gray);
+}
+.cutom .container{
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+.cutom .container div:first-child{
+    width: 100%;
+}
+.cutom .div-of-img{
+    border: 1px solid #ffffff40;
+    padding: 1px;
+    border-radius: 0.5rem;
+    width: 100%;
+    height: 390px;
+}
+.cutom .div-of-img img{
+    border-radius: 0.5rem;
+}
+/* ======== End Customize Section======== */
+/* ======== Start excursions Section======== */
+.excursions-sec .btn::before,
+.excursions-sec .btn::after{
+    border-color: var(--dark-blue);
+}
+.excursions-sec  .btn-befor,
+.excursions-sec  .btn-after{
+    border-color: var(--dark-blue);
+}
+.excursions-sec .container{
+    align-items: center;
+    flex-wrap: wrap;
+     gap: 3rem;
+}
+.excursions-sec .container div:last-child{ 
+    width: 100%; 
+    order: 1;
+} 
+.excursions-sec .div-of-img{
+     width: 100%; 
+     height: 350px; 
+     order: 2;
+} 
+ /* ======== End excursions Section======== */ /* ======== Start services Section======== */ 
