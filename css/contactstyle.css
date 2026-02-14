@@ -1,0 +1,226 @@
+:root{
+    --orange: rgb(248, 112, 96);
+    --dark-blue: rgb(39, 38, 53);
+    --gray: #ffffffbf;
+    --white: rgb(255, 255, 255);
+}
+.left-side{
+    width: 50%;
+}
+
+
+
+.in-touch .hear-txt{
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+    font-size: 50px;
+}
+
+/* ====Contact Section start=== */
+.contact-img{
+    background-image:
+    url(/assets/contact/contactus.jpg) ;
+    background-position: center bottom 65px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 29rem;
+    background-attachment: fixed;
+    position: relative;
+}
+.contact-img::before{
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.226);
+    width: 100%;
+    height: 100%;
+}
+.txt-contact{
+    z-index: 2;
+    position: relative;
+    padding-top: 15rem;
+    font-size: 3rem;
+}
+/* ====Contact Section end=== */
+
+/* ====In Touch Section start=== */
+
+                    /* ====Form Style=== */
+.fullname{
+    width: 700px;
+    height: 45px;
+    border-radius: 10px;
+    border: 1px rgba(194, 71, 71, 0.685) solid;
+    padding: 15px;
+}
+.email-phone,
+.country-nationality {
+    display: flex;
+    flex-wrap: wrap; /* allow items to go to next line */
+    gap: 10px;
+    width: 100%; /* flexible container */
+}
+
+.email-phone input,
+.country-nationality select {
+    flex: 1 1 200px; /* flexible width, min 200px */
+    min-width: 150px; /* so it doesn't get too small */
+}
+
+.gap-label{
+    gap: 10px;
+}
+.email-phone input , .country-nationality select{
+    width: 345px;
+    height: 45px;
+    border-radius: 10px;
+    border: 1px rgba(194, 71, 71, 0.685) solid;
+    padding: 15px;
+}
+input:focus, textarea:focus, select:focus{
+    outline: none;
+}
+textarea{
+    height: 136px;
+    width: 700px;
+    border-radius: 10px;
+    border: 1px rgba(194, 71, 71, 0.685) solid;
+    padding: 15px;
+}
+label{
+    padding: 15px;
+}
+
+
+                    /* ====How Contact Div start=== */
+.how-contact-txt{
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+.desc-contact{
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+.icon-contact{
+    font-size: 35px;
+    margin-right: 5px;
+}
+.in-touch a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    transition: all 0.15s;
+}
+.in-touch a:hover{
+    color: var(--orange);
+}
+.socials{
+    padding-top: 15px;
+    margin: 35px;
+}
+.icon-circle{
+    width: 50px;
+    height: 50px;
+    background-color:rgb(10, 10, 10);
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    transition: 0.2s;
+}
+.icon-circle i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 25px;
+    display: block;
+    color: white;
+    transform: translate(-50%, -50%);
+}
+.icon-circle:hover{
+    box-shadow: 0 0 2px 2px var(--orange); 
+}
+.in-touch .btn{
+    color: black;
+   
+}
+.in-touch .btn::before,
+.in-touch .btn::after{
+    border: 2px solid black;
+}
+.in-touch .btn .btn-befor,
+.in-touch .btn .btn-after{
+    border: 1px solid black;
+}
+
+
+/* =======Responsive Styles (Media Queries)=========== */
+
+/* -------- Tablet / Small Desktop -------- */
+@media (max-width: 1024px){
+    /* show items vertically instead of row */
+    .d-flex{
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    /* Make inputs/selects/textareas full width */
+    .fullname, textarea, .email-input, .phone-input .country-input , .nationality-input{
+        width: 100%;
+    }
+
+    /* Reduce background image height */
+    .contact-img{
+        height: 20rem;
+        background-position: center center;
+    }
+
+    /* Reduce font size for headings */
+    .txt-contact{ font-size: 2rem; padding-top: 10rem; }
+    .in-touch .hear-txt{ font-size: 35px; }
+
+    /* Reduce description font size */
+    .desc-contact{ font-size: 16px; }
+
+    /* Reduce social icon size */
+    .icon-circle{ width: 40px; height: 40px; }
+    .icon-circle i{ font-size: 20px; }
+}
+/* Apply these styles when screen width is 580px or smaller */  
+@media (max-width: 580px) {
+    .email-phone,
+    .country-nationality {
+        flex-direction: column; /* inputs vertically */
+    }
+
+    .email-phone input,
+    .country-nationality select {
+        width: 100%; /* full width */
+    }
+}
+
+
+/* -------- Mobile / Small Screens -------- */
+@media (max-width: 600px){
+    .gap{ gap: 20px; }
+
+    .txt-contact{ font-size: 1.8rem; padding-top: 8rem; }
+    .in-touch .hear-txt{ font-size: 28px; }
+
+    /* Inputs & textarea smaller height and padding */
+    .fullname, textarea, .email-phone input, .country-nationality select{
+        width: 100%;
+        padding: 10px;
+        height: 40px;
+    }
+    textarea{ height: 120px; }
+
+    /* Smaller button */
+    .btn{ padding: 0.5rem 1.5rem; font-size: 0.9rem; }
+
+    /* Smaller contact heading and description */
+    .how-contact-txt{ font-size: 20px; }
+    .desc-contact{ font-size: 14px; }
+}

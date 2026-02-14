@@ -1,15 +1,30 @@
-/* ======================================== Custom Styles ======================================== */
+:root{
+    --orange: rgb(248, 112, 96);
+    --dark-blue: rgb(39, 38, 53);
+    --gray: #ffffffbf;
+    --white: rgb(255, 255, 255);
+}
+.sec-padding{
+    padding-top: 555px;
+
+}
+
+.title{
+    font-size: 2.5rem;
+    margin: .5rem 0;
+    line-height: 1.2;
+}
+.desc{
+    font-size: 1.125rem;
+    margin: 1.5rem 0 1.8rem 0;
+    line-height: 1.5;
+}
 
 /* ======== Start Hero Section======== */
 .hero-sec{
     height: 70vh;
 }
-.hero-sec video{
-    bottom: 0;
-    left: 0;
-    z-index: -1;
-}
-.hero-sec > div{
+.hero-sec > .text-center{
     position: absolute;
     bottom: 10%;
     left: 50%;
@@ -37,6 +52,71 @@
     background-color: var(--orange);
 }
 /* ======== End Hero Section======== */
+
+/* =======Start Welcome Section=========== */
+
+.welcome{
+    background-color: var(--white);
+}
+.welcome .befor-title::before{
+    background-color: var(--dark-blue);
+}
+
+.welcome .container{
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+}
+.welcome .container div:last-child{
+    width: 100%;
+}
+.welcome .div-of-img {
+    border: 1px solid #ffffff40;
+    padding: 1px;
+    border-radius: 0.5rem;
+    width: 70%
+    height : 390px;
+}
+.welcome .div-of-img img{
+    border-radius: 0.5rem;
+}
+
+
+/* ======== end welcome Section======== */
+
+/* ======== Start Why Choose Section======== */
+.why-choose{
+    
+    background-image: url(/assets/homePage/whychoose.png);
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    font-size: 18px;
+    
+    padding: 60px 10%;
+}
+
+.why-choose h2{
+    font-size: 43px;
+    margin: 15px;
+}
+.why-choose .desc p{
+    margin: 15px;
+    font-size: 20px;
+}
+.why-choose .btn{
+    margin: 25px 0 0 350px;
+    font-weight: bold;
+}
+.statics{
+    gap:120px;
+    margin: 15px;
+    text-align: center;
+    font-size: 20px;
+}
+/* ======== End Why Choose Section======== */
+
 /* ======== Start Customize Section======== */
 .cutom .befor-title::before{
     background-color: var(--gray);
@@ -44,7 +124,6 @@
 .cutom .container{
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
     gap: 3rem;
 }
 .cutom .container div:first-child{
@@ -60,39 +139,14 @@
 .cutom .div-of-img img{
     border-radius: 0.5rem;
 }
-/* // Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {
-
-}
-/* // Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {  
-    .cutom .container{
-        gap: 1rem;
-    }
-    .cutom .div-of-img{
-        width: 45%;
-    }
-    .cutom .container div:first-child{
-        width: 50%;
-    }
-}
-/* // Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {  
-
-}
-/* // X-Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {  
-
-}
-/* // XX-Large devices (larger desktops, 1400px and up) */
-@media (min-width: 1400px) {  
-
-}
 /* ======== End Customize Section======== */
 /* ======== Start excursions Section======== */
 .excursions-sec .btn::before,
 .excursions-sec .btn::after{
     border-color: var(--dark-blue);
+}
+.excursions-sec{
+    background-color: white;
 }
 .excursions-sec  .btn-befor,
 .excursions-sec  .btn-after{
@@ -100,8 +154,7 @@
 }
 .excursions-sec .container{
     align-items: center;
-    flex-wrap: wrap;
-     gap: 3rem;
+    gap: 3rem;
 }
 .excursions-sec .container div:last-child{ 
     width: 100%; 
@@ -112,43 +165,65 @@
      height: 350px; 
      order: 2;
 } 
-/* // Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {
+.excursions-sec .btn{
+    color: black;
+}
+ /* ======== End excursions Section======== */ 
 
+ /* ======== Start Information Section======== */ 
+.info .befor-title::before{
+    background-color: var(--dark-blue);
 }
-/* // Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {  
-    .excursions-sec .container{ 
-        gap: 1rem; 
-    }
-    .excursions-sec .container div:last-child{ 
-    width: 65%; 
-    order: 2;
-    } 
-    .excursions-sec .div-of-img{
-     width: 30%; 
-     order: 1;
-    } 
+.info{
+    width: 75%;
+    margin: auto;
 }
-/* // Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {  
-    .excursions-sec .container{ 
-        gap: 2rem; 
-    }
-    .excursions-sec .container div:last-child{ 
-    width: 70%; 
-    } 
-    .excursions-sec .div-of-img{
-     width: 25%; 
-    } 
+.info.box{
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+}
+.info .box div:last-child{
+    width: 100%;
+}
+.info .div-of-img{
+    border: 1px solid #7a7a7aa4;
+    padding: 1px;
+    border-radius: 0.5rem;
+    width: 100%;
+    height: 290px;
+    border-radius: 0.5rem;
+}
+.info .div-of-img img{
+    border-radius: 0.5rem;
+    
+}
 
-}
-/* // X-Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {  
 
-}
-/* // XX-Large devices (larger desktops, 1400px and up) */
-@media (min-width: 1400px) {  
+/* ======== end Information Section======== */ 
 
+
+/* ======== Mwdia Queries======== */ 
+
+
+
+
+/*Hero Section*/
+@media (max-width: 768px) {
+  .hero-sec {
+    height: 60vh;
+  }
+
+  .hero-sec div h1 {
+    font-size: 2rem;
+  }
+
+  .hero-sec div p {
+    font-size: 1rem;
+  }
+
+  .hero-sec div div {
+    flex-direction: column;
+  }
 }
- /* ======== End excursions Section======== */
+

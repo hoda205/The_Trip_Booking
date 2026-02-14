@@ -1,0 +1,126 @@
+:root{
+    --orange: rgb(248, 112, 96);
+    --dark-blue: rgb(39, 38, 53);
+    --gray: #ffffffbf;
+    --white: rgb(255, 255, 255);
+}
+/* ====Contact Section start=== */
+.about-img{
+    background-image:
+    url(/assets/about/aboutus.jpg) ;
+    background-position: center ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 29rem;
+    background-attachment: fixed;
+    position: relative;
+}
+.about-img::before{
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.226);
+    width: 100%;
+    height: 100%;
+}
+.txt-about{
+    z-index: 2;
+    position: relative;
+    padding-top: 15rem;
+    font-size: 3rem;
+}
+/* ====about Section end=== */
+
+/* =======Start Welcome Section=========== */
+
+.welcome{
+    background-color: var(--white);
+}
+
+.welcome .container{
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+}
+.welcome .container div:last-child{
+    width: 100%;
+}
+.welcome .div-of-img{
+    border: 1px solid #ffffff40;
+    padding: 1px;
+    border-radius: 0.5rem;
+    width: 80%
+    height : 390px;
+}
+.welcome .div-of-img img{
+    border-radius: 0.5rem;
+}
+.welcome h2{
+    margin: 12;
+    font-size: 30px;
+}
+.welcome p{
+    margin: 12px;
+    font-size: 22px;
+}
+
+/* ======== end welcome Section======== */
+
+/* ======== Start Why Choose Section======== */
+.why-choose{
+    
+    background-image: url(/assets/homePage/whychoose.png);
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    font-size: 18px;
+    height: 30rem;
+    padding: 60px 10%;
+}
+
+.why-choose h2{
+    font-size: 43px;
+    margin: 15px;
+}
+.why-choose .desc p{
+    margin: 15px;
+    font-size: 20px;
+}
+
+.statics{
+    padding-top: 40px;
+    gap:120px;
+    margin: 15px;
+    text-align: center;
+    font-size: 20px;
+}
+/* ======== End Why Choose Section======== */
+
+/* ======== Start About Text Section======== */
+.about-txt{
+    width: 75%;
+    margin: auto;
+    padding-bottom: 55px;
+}
+.about-txt p{
+    margin: 5px;
+    font-size: 19px;
+}
+.about-txt span{
+    font-size: 19px;
+}
+.about-txt ul li{
+    margin: 4px;
+}
+
+.about-txt h2{
+    color: var(--orange);
+
+}
+
+/* ======== End About Text Section======== */
+
