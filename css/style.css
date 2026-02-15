@@ -142,14 +142,6 @@ nav a.active{
     width: 95%;
     margin: auto;
 }
-
-/* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {
-    .container{
-
-    }
-}
-
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
     .container{
@@ -235,7 +227,7 @@ nav a.active{
     border-radius: 0 0.25rem 0.25rem 0;
     right: 0%;
 }
-.btn .btn-befor,
+.btn .btn-before,
 .btn .btn-after{
     position: absolute;
     display: inline-block;
@@ -243,8 +235,12 @@ nav a.active{
     border: 1px solid white;
     border-top-left-radius: 0.25rem;
     transition: transform 0.3s ease-in-out , border-color 0.3s ease-in-out , color 0.3s ease-in-out ;
+    -webkit-transition: transform 0.3s ease-in-out , border-color 0.3s ease-in-out , color 0.3s ease-in-out ;
+    -moz-transition: transform 0.3s ease-in-out , border-color 0.3s ease-in-out , color 0.3s ease-in-out ;
+    -ms-transition: transform 0.3s ease-in-out , border-color 0.3s ease-in-out , color 0.3s ease-in-out ;
+    -o-transition: transform 0.3s ease-in-out , border-color 0.3s ease-in-out , color 0.3s ease-in-out ;
 }
-.btn .btn-befor{
+.btn .btn-before{
     left: 50%;
     transform: translateX(150%);
     border-top-right-radius: 0.25rem;
@@ -263,7 +259,7 @@ nav a.active{
 .btn span:last-of-type{
     bottom: 0%;
 }
-.btn:hover .btn-befor,
+.btn:hover .btn-before,
 .btn:hover .btn-after{
     transform: translateX(0);
     border-color: var(--orange) !important;

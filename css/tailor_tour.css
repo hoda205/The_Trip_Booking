@@ -1,0 +1,286 @@
+/*
+/* X-Small devices (portrait phones, less than 576px)
+No media query for xs since this is the default in Bootstrap
+
+Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) { ... }
+*/
+
+:root{
+    --orange: rgb(248, 112, 96);
+    --dark-blue: rgb(39, 38, 53);
+    --gray: #ffffffbf;
+    --pinkish: #fff8f7f5;
+}
+
+/* =============Reset Styles ============= */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 0.8rem;
+}
+
+input,
+button,
+select,
+textarea {
+    font:inherit;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    min-height: 100vh;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+/* =============Global reset============= */
+
+.container{
+    width: 95%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero-section{
+    height: 65vh;
+    display: flex;
+    position: relative;
+}
+
+.hero-section img{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    object-fit: cover;
+    object-position: center 80%;
+}
+
+.hero-section-title{
+    height: fit-content;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /*at first I gave the title itself a height of 70vh, but this was suggested so that the title has it's own size 3ady*/
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    font-size: 3.5rem;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+}
+
+.explanation{
+    display: flex;
+    flex-direction: column;
+    padding: 48px 0;
+    min-height: 30vh;
+}
+
+.small-title {
+    color: var(--dark-blue);
+    padding: 0 0 32px;
+    font-size: 1rem;
+}
+
+.small-title::before {
+    content: "";
+    display: inline-block;
+    width: 30px;
+    height: 2px;
+    margin: 0 6px 6px 2px;
+    background-color: var(--dark-blue);
+}
+
+.explanation .main-title {
+    padding: 0 0 24px;
+    color: var(--orange);
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+.explanation p {
+    color: var(--dark-blue);
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.explanation ul{
+    padding: 24px 0 0;
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    font-size: 1.5rem;
+}
+
+.explanation ul li a {
+    color: var(--dark-blue);
+    transition: color 0.3s ease;
+}
+
+.explanation ul li a:hover {
+    color: var(--orange);
+}
+
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    html {
+        font-size: 0.9rem;
+    }
+
+    .container {
+        width: 90%;
+        max-width: 900px;
+    }
+
+    .hero-section-title {
+        font-size: 4rem; /* Decreased from 6rem */
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    html {
+        font-size: 1rem;
+    }
+
+    .container {
+        width: 85%;
+        max-width: 1000px;
+    }
+
+    .hero-section-title {
+        font-size: 4.5rem; /* Decreased from 7rem */
+    }
+
+    .explanation {
+        padding: 64px 0;
+    }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    html {
+        font-size: 1.1rem;
+    }
+
+    .container {
+        width: 80%;
+        max-width: 1100px;
+    }
+    .hero-section-title {
+        font-size: 5rem; /* Decreased from 8rem */
+    }
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+    html {
+        font-size: 1.2rem;
+    }
+
+    .container {
+        width: 75%;
+        max-width: 1200px;
+    }
+}
+
+/* Small devices (landscape phones, 576px and down) */
+@media (max-width: 576px) {
+    html {
+        font-size: 0.7rem;
+    }
+
+    .hero-section {
+        height: 50vh;
+    }
+
+    .hero-section-title {
+        font-size: 2.5rem;
+    }
+
+    .explanation .main-title {
+        font-size: 1.8rem;
+    }
+
+    .explanation p {
+        font-size: 1rem;
+    }
+
+    .explanation ul {
+        font-size: 1.3rem;
+        gap: 15px;
+    }
+}
+
+.booking-form-section{
+    background-color: var(--pinkish);
+    padding: 6em 0 6em 0;
+}
+
+.booking-form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5em;
+}
+
+.form-grid-one{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "form-box1 form-box2"
+    "form-box3 form-box4"
+    "form-box5 form-box5"
+    "form-box6 form-box6";
+    gap: 2em;
+}
+
+.form-grid-two {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "form-box7 form-box8"
+        "form-box9 form-box10"
+        "form-box11 form-box12"
+        "form-box13 form-box13";
+    gap: 2em;
+}
+
+.form-group{
+    display: grid;
+    gap: 0.5em;
+    width:100%;
+}
+
+.form-actions .btn::before,
+.form-actions .btn::after{
+    border-color: var(--dark-blue);
+}
+.form-actions  .btn-before,
+.form-actions  .btn-after{
+    border-color: var(--dark-blue);
+}
