@@ -139,14 +139,14 @@ nav a.active{
     width: 100%;
 }
 .container{
-    width: 95%;
+    width: 100%;
     margin: auto;
 }
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
     .container{
-
+        width: 95%;
     }
 }
 
