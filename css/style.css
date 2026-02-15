@@ -142,6 +142,28 @@ nav a.active{
     width: 95%;
     margin: auto;
 }
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    .container{
+
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .container{
+        width: 90%;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .container{
+        width: 85%;
+    }
+}
+
 .sec-container{
     background-color: rgba(250, 235, 215, 0.486);
 }

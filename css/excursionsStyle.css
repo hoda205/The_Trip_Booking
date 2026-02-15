@@ -94,6 +94,9 @@
     gap: 1rem;
     align-items: flex-start;
 }
+.excursions .container .filter .group > div{
+    width: 100%;
+}
 /* =================Start Filter============ */
 /* Start Filter List */
 .excursions .container .filter-list,
@@ -163,10 +166,37 @@
 .excursions .container .found .cards{
     gap: 1rem 1rem;
     flex-direction: row;
+    justify-content: center;
 }
 .excursions .container .found .cards .card {
     padding: 0;
+    height: 300px;
+    width: 60%;
+    perspective: 1000px;
 }
+.excursions .container .found .cards .card .card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+.excursions .container .found .cards .card .front,
+.excursions .container .found .cards .card .back {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+.excursions .container .found .cards .card .back {
+  transform: rotateY(180deg);
+  overflow-y: auto;
+}
+.card:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
 .excursions .container .found .cards .card .card-content{
     padding: 1rem;
     font-size: 0.85rem;
@@ -186,49 +216,6 @@
     font-weight: 700;
     margin: 0.5rem 0 1rem 0;
 }
-/* Flip Card */
-/* .card {
-  width: 200px;
-  height: 250px;
-  margin: 1rem auto;
-  perspective: 1000px;
-  cursor: pointer;
-}
-
-.card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  transition: transform 0.6s;
-  transform-style: preserve-3d;
-}
-
-.card:hover .card-inner {
-  transform: rotateY(180deg);
-}
-
-.card-front,
-.card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 0.5rem;
-}
-
-.card-front {
-  background: white;
-  border: 1px solid #e5e7eb;
-}
-
-.card-back {
-  background: #8b5cf6;
-  color: white;
-  transform: rotateY(180deg);
-} */
 
 /* =================End Found============ */
 @media (min-width: 576px) {
@@ -238,12 +225,22 @@
     .excursions .container .filter .group > div{
         width: 50%;
     }
+    .excursions .container .found .cards .card{
+        height: 360px;
+    }
     
 }
 @media (min-width: 768px) {  
+    .excursions .container .found .cards {
+        justify-content: space-between;
+    }
     .excursions .container .found .cards .card{
         width: calc((100% / 2 ) - (1rem * 1 / 2));
     }
+    .excursions .container .found .cards .card{
+        height: 400px;
+    }
+
 }
 @media (min-width: 992px) {  
     .excursions .container .filter{
@@ -263,6 +260,9 @@
     }
     .excursions .container .found .cards .card{
         width: calc((100% / 3 ) - (1rem * 2 / 3));
+    }
+    .excursions .container .found .cards .card{
+        height: 360px;
     }
 }
 @media (min-width: 1200px) {  
