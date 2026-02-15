@@ -166,6 +166,27 @@ main .social {
 }
 
 /* ------------------------------------- */
+.book{
+    display: flex;
+    padding-top: 5%;
+    margin-left: 45%;
+    font-size: 2rem;
+    width: 500px;
+    height: 140px;
+    
+}
+.book .btn{
+    color: var(--dark-blue);
+    
+}
+.book .btn::before,
+.book .btn::after{
+    border-color: var(--dark-blue);
+}
+.book  .btn-befor,
+.book  .btn-after{
+    border-color: var(--dark-blue);
+}
 /*footer*/
 footer {
     margin-top: 15%;
