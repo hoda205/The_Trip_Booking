@@ -1,0 +1,60 @@
+ html{
+    font-size: 12px;
+ }
+ @media (min-width: 575.98px) { 
+    html{font-size: 14px;}
+}
+@media (min-width: 767.98px) { 
+    html{
+        font-size: 16px;
+    }
+}
+ /* Start Section one */
+ .contact-img{
+    background-image: url('../assets/Excursions/ExcursionsPage1.jpg');
+}
+/* End Section One */
+/* Start Section Two */
+.intro .py{
+    padding: 4rem 0 0 0;
+}
+.intro .container p{
+    padding-bottom: 1rem;
+}
+ .social-icons{
+    margin: 1.5rem 0;
+    flex-direction: row;
+    gap: 0;
+}
+ .social-icons a i{
+    font-size: 1.125rem;
+}
+ .social-icons a {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-right: .75rem;
+    border-radius: 50%;
+}
+/* // X-Small devices (portrait phones, less than 576px) */
+@media (min-width: 575.98px) { 
+    .social-icons{
+        display: flex;
+        justify-content: flex-start;
+    }
+}
+
+/* // Small devices (landscape phones, less than 768px) */
+@media (min-width: 767.98px) { 
+
+}
+
+/* // Medium devices (tablets, less than 992px) */
+@media (min-width: 991.98px) { 
+    .social-icons{
+        justify-content: start;
+    }
+    .intro .container p{
+    width: 50%;
+    }
+}
+/* End Section Two */

@@ -3,6 +3,7 @@
     --dark-blue: rgb(39, 38, 53);
     --gray: #ffffffbf;
     --white: rgb(255, 255, 255);
+    --light-orange: #fff8f7;
 }
 
 /* =============Reset Styles ============= */
@@ -31,8 +32,6 @@ header{
     top: 0;
     left: 0;
 }
-
-
 nav {
     margin: 9px;
     padding-top:5px;
@@ -80,6 +79,16 @@ nav a.active{
     background-color: var(--dark-blue);
     vertical-align: middle;
 }
+.title{
+    font-size: 2.5rem;
+    margin: .5rem 0;
+    line-height: 1.2;
+}
+.desc{
+    font-size: 1.125rem;
+    margin: 1.5rem 0 1.8rem 0;
+    line-height: 1.5;
+}
 /* =============Global Styles ============= */
 .position-relative{
     position: relative;
@@ -97,6 +106,9 @@ nav a.active{
     color: var(--orange);
 }
 
+.bg-light-orange{
+    background-color: var(--light-orange);
+}
 .text-dark-blue{
     color: var(--dark-blue);
 }
@@ -123,7 +135,9 @@ nav a.active{
     height: 100%;
     object-fit: cover;
 }
-
+.w-100{
+    width: 100%;
+}
 .container{
     width: 95%;
     margin: auto;
@@ -140,6 +154,12 @@ nav a.active{
 }
 .justify-between{
     justify-content: space-between;
+}
+.align-items-center{
+    align-items: center;
+}
+.justify-content-center{
+    justify-content: center;
 }
 .txt-bold{
     font-weight: bold;
