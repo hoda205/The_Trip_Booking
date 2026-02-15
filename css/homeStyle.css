@@ -1,26 +1,31 @@
 /* ======================================== Custom Styles ======================================== */
 
 /* ======== Start Hero Section======== */
-.hero-sec{
+.hero-sec {
     height: 70vh;
 }
-.hero-sec video{
+
+.hero-sec video {
     bottom: 0;
     left: 0;
     z-index: -1;
 }
-.hero-sec > div{
+
+.hero-sec>div {
     position: absolute;
     bottom: 10%;
     left: 50%;
     transform: translateX(-50%);
 }
-.hero-sec div h1{
+
+.hero-sec div h1 {
     font-size: 3.5rem;
 }
-.hero-sec div p{
+
+.hero-sec div p {
     font-size: 1.25rem;
 }
+
 .hero-sec div div {
     margin-top: 1rem;
     display: flex;
@@ -28,127 +33,142 @@
     align-items: center;
     justify-content: center;
 }
-.hero-sec div div a{
+
+.hero-sec div div a {
     border: none;
     font-size: 1rem;
     padding: 0.3rem 0.8rem;
 }
-.hero-sec div div a:last-child{
+
+.hero-sec div div a:last-child {
     background-color: var(--orange);
 }
+
 /* ======== End Hero Section======== */
 /* ======== Start Customize Section======== */
-.cutom .befor-title::before{
+.cutom .befor-title::before {
     background-color: var(--gray);
 }
-.cutom .container{
+
+.cutom .container {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     gap: 3rem;
 }
-.cutom .container div:first-child{
+
+.cutom .container div:first-child {
     width: 100%;
 }
-.cutom .div-of-img{
+
+.cutom .div-of-img {
     border: 1px solid #ffffff40;
     padding: 1px;
     border-radius: 0.5rem;
     width: 100%;
     height: 390px;
 }
-.cutom .div-of-img img{
+
+.cutom .div-of-img img {
     border-radius: 0.5rem;
 }
-/* // Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {
 
-}
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {}
+
 /* // Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {  
-    .cutom .container{
+@media (min-width: 768px) {
+    .cutom .container {
         gap: 1rem;
     }
-    .cutom .div-of-img{
+
+    .cutom .div-of-img {
         width: 45%;
     }
-    .cutom .container div:first-child{
+
+    .cutom .container div:first-child {
         width: 50%;
     }
 }
+
 /* // Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {  
+@media (min-width: 992px) {}
 
-}
 /* // X-Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {  
+@media (min-width: 1200px) {}
 
-}
 /* // XX-Large devices (larger desktops, 1400px and up) */
-@media (min-width: 1400px) {  
+@media (min-width: 1400px) {}
 
-}
 /* ======== End Customize Section======== */
 /* ======== Start excursions Section======== */
 .excursions-sec .btn::before,
-.excursions-sec .btn::after{
+.excursions-sec .btn::after {
     border-color: var(--dark-blue);
 }
-.excursions-sec  .btn-befor,
-.excursions-sec  .btn-after{
+
+.excursions-sec .btn-befor,
+.excursions-sec .btn-after {
     border-color: var(--dark-blue);
 }
-.excursions-sec .container{
+
+.excursions-sec .container {
     align-items: center;
     flex-wrap: wrap;
-     gap: 3rem;
+    gap: 3rem;
 }
-.excursions-sec .container div:last-child{ 
-    width: 100%; 
+
+.excursions-sec .container div:last-child {
+    width: 100%;
     order: 1;
-} 
-.excursions-sec .div-of-img{
-     width: 100%; 
-     height: 350px; 
-     order: 2;
-} 
-/* // Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {
-
 }
-/* // Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {  
-    .excursions-sec .container{ 
-        gap: 1rem; 
-    }
-    .excursions-sec .container div:last-child{ 
-    width: 65%; 
+
+.excursions-sec .div-of-img {
+    width: 100%;
+    height: 350px;
     order: 2;
-    } 
-    .excursions-sec .div-of-img{
-     width: 30%; 
-     order: 1;
-    } 
 }
-/* // Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {  
-    .excursions-sec .container{ 
-        gap: 2rem; 
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .excursions-sec .container {
+        gap: 1rem;
     }
-    .excursions-sec .container div:last-child{ 
-    width: 70%; 
-    } 
-    .excursions-sec .div-of-img{
-     width: 25%; 
-    } 
+
+    .excursions-sec .container div:last-child {
+        width: 65%;
+        order: 2;
+    }
+
+    .excursions-sec .div-of-img {
+        width: 30%;
+        order: 1;
+    }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .excursions-sec .container {
+        gap: 2rem;
+    }
+
+    .excursions-sec .container div:last-child {
+        width: 70%;
+    }
+
+    .excursions-sec .div-of-img {
+        width: 25%;
+    }
 
 }
+
 /* // X-Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {  
+@media (min-width: 1200px) {}
 
-}
 /* // XX-Large devices (larger desktops, 1400px and up) */
-@media (min-width: 1400px) {  
+@media (min-width: 1400px) {}
 
-}
- /* ======== End excursions Section======== */
+/* ======== End excursions Section======== */

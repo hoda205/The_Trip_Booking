@@ -171,9 +171,6 @@ main .social {
     padding-top: 5%;
     margin-left: 45%;
     font-size: 2rem;
-    /* width: 500px;
-    height: 140px; */
-    
 }
 .book .btn{
     color: var(--dark-blue);
@@ -188,6 +185,6 @@ main .social {
     border-color: var(--dark-blue);
 }
 /*footer*/
-footer {
-    margin-top: 15%;
+.book {
+    margin-bottom: 15%;
 }
