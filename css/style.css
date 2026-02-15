@@ -161,6 +161,9 @@ nav a.active{
 .justify-content-center{
     justify-content: center;
 }
+.flex-wrap{
+    flex-wrap: wrap;
+}
 .txt-bold{
     font-weight: bold;
 }
