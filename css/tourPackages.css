@@ -94,3 +94,8 @@ main .social {
 .book .btn-after {
     border-color: var(--dark-blue);
 }
+
+/* huda add this */
+.newsletter{
+    flex-direction: column;
+}
