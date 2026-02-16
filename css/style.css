@@ -62,7 +62,7 @@ nav a.active{
     margin: 15px;
 }
 
-.befor-title{
+.before-title{
     font-size: 0.875rem;
     color: var(--dark-blue);
     letter-spacing: 0.1em;
@@ -70,7 +70,7 @@ nav a.active{
     margin-bottom: 1rem;
     font-weight: bold;
 }
-.befor-title::before{
+.before-title::before{
     content: "";
     display: inline-block;
     width: 30px;
@@ -128,7 +128,10 @@ nav a.active{
     padding: 6.5rem 0;
 }
 .d-flex{
+    height:fit-content;
+    padding:10px;
     display: flex;
+    width:100%
 }
 .cover{
     width: 100%;
@@ -181,9 +184,7 @@ nav a.active{
 .txt-bold{
     font-weight: bold;
 }
-.d-flex{
-    display: flex;
-}
+/*removed redundant d-flex*/
 .gap{
     gap: 70px;
 }
@@ -231,8 +232,9 @@ nav a.active{
 .btn .btn-after{
     position: absolute;
     display: inline-block;
-    width: 49%;
+    width: 50%;
     border: 1px solid white;
+    margin: 0px;
     border-top-left-radius: 0.25rem;
     transition: transform 0.3s ease-in-out , border-color 0.3s ease-in-out , color 0.3s ease-in-out ;
     -webkit-transition: transform 0.3s ease-in-out , border-color 0.3s ease-in-out , color 0.3s ease-in-out ;
@@ -271,7 +273,7 @@ nav a.active{
 .btn:hover:after{
     border-left-color: transparent !important;
 }
-.btn:hover::before{ 
+.btn:hover::before{
     border-right-color: transparent !important;
 }
 
@@ -532,8 +534,39 @@ nav a.active{
 
     /* Reduce font size for headings */
     .txt-about{ font-size: 2rem; padding-top: 10rem; }
-    
+
 
     /* Reduce description font size */
     .desc-contact{ font-size: 16px; }
+}
+
+/*M7Kasem's edits*/
+
+
+.hero-section-title{
+/* These center the ELEMENT itself within .hero-section */
+  position: absolute;
+  top: 50%;              /* Moves top edge to 50% from parent's top */
+  left: 50%;             /* Moves left edge to 50% from parent's left */
+  transform: translate(-50%, -50%);  /* Shifts element back by 50% of its OWN size */
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);  
+/* These center the CONTENT inside the element */
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+/*these are just for styling*/
+  color: white;
+  font-weight: 400;
+  font-size: 3.5rem;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+}
+input,button, select, textarea{
+  font: inherit;
+  width:100%;
+  
 }

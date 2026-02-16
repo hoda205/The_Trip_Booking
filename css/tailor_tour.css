@@ -75,35 +75,17 @@ a{
     object-position: center 80%;
 }
 
-.hero-section-title{
-    height: fit-content;
-    width: 100%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    /*at first I gave the title itself a height of 70vh, but this was suggested so that the title has it's own size 3ady*/
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-weight: 400;
-    font-size: 3.5rem;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
-}
-
 .explanation{
     display: flex;
     flex-direction: column;
-    padding: 48px 0;
-    min-height: 30vh;
+    justify-content: center;
+    min-height: 35vh;
 }
 
 .small-title {
     color: var(--dark-blue);
-    padding: 0 0 32px;
-    font-size: 1rem;
+    padding:  0 0 0 0.5vh;
+    font-size: 1.1rem;
 }
 
 .small-title::before {
@@ -111,12 +93,13 @@ a{
     display: inline-block;
     width: 30px;
     height: 2px;
-    margin: 0 6px 6px 2px;
+    margin: 0 7px 0px 0px;
+    vertical-align: middle;
     background-color: var(--dark-blue);
 }
 
 .explanation .main-title {
-    padding: 0 0 24px;
+    padding: 0 0 0.05vh;
     color: var(--orange);
     font-size: 2.2rem;
     font-weight: 700;
@@ -129,7 +112,7 @@ a{
 }
 
 .explanation ul{
-    padding: 24px 0 0;
+    padding: 3vh 0 0;
     list-style: none;
     display: flex;
     gap: 20px;
@@ -145,6 +128,97 @@ a{
     color: var(--orange);
 }
 
+.booking-form-section{
+    background-color: var(--pinkish);
+    min-height: 80vh;
+    padding: 2rem 0;
+}
+
+/* Mobile-first: Single column layout */
+.booking-form{
+    display: grid;
+    width: 100%;
+    gap: 1rem;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "form-box7"
+    "form-box8"
+    "form-box9"
+    "form-box10"
+    "form-box11"
+    "form-box12"
+    "form-box1"
+    "form-box2"
+    "form-box3"
+    "form-box4"
+    "form-box5"
+    "form-box6"
+    "form-box13";
+}
+
+.form-group{
+    display: grid;
+    gap: 0.2em;
+    margin-bottom: 1em;
+}
+
+.form-group input,.form-group select,.form-group textarea{
+    border: 2px solid black;
+    border-radius:0.5rem;
+    -webkit-border-radius:0.5rem;
+    -moz-border-radius:0.5rem;
+    -ms-border-radius:0.5rem;
+    -o-border-radius:0.5rem;
+    padding: 0.5em 0.75em;
+    width: 100%;
+}
+
+.booking-form-section h2{
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--dark-blue);
+    text-shadow: 2px 2px 8px rgb(255, 255, 255);
+    padding: 0.6em 0;
+}
+
+.form-actions .btn::before,
+.form-actions .btn::after{
+    border-color: var(--dark-blue);
+}
+.form-actions  .btn-before,
+.form-actions  .btn-after{
+    border-color: var(--dark-blue);
+}
+
+.btn{
+    color: black;
+}
+
+.btn:hover{
+    color: var(--orange);
+}
+.form-group label{
+    font-size: 1.5rem;
+}
+input, select{
+    height: 3rem;
+    background-color: white;
+}
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    .booking-form{
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+        "form-box7 form-box8"
+        "form-box9 form-box10"
+        "form-box11 form-box12"
+        "form-box1 form-box2"
+        "form-box3 form-box4"
+        "form-box5 form-box5"
+        "form-box6 form-box6"
+        "form-box13 form-box13";
+    }
+}
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
@@ -158,9 +232,21 @@ a{
     }
 
     .hero-section-title {
-        font-size: 4rem; /* Decreased from 6rem */
+        font-size: 4rem;
+    }
+
+    .booking-form{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+        "form-box7 form-box8  form-box11"
+        "form-box9 form-box10 form-box12"
+        "form-box1 form-box2  form-box3"
+        "form-box4 form-box5  placeholder"
+        "form-box6 form-box  placeholder"
+        "form-box13 form-box13 form-box13";
     }
 }
+
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
@@ -174,11 +260,23 @@ a{
     }
 
     .hero-section-title {
-        font-size: 4.5rem; /* Decreased from 7rem */
+        font-size: 4.5rem;
     }
 
     .explanation {
         padding: 64px 0;
+    }
+
+    .booking-form{
+        grid-template-columns: 1fr 1fr 0.5fr 1fr 1fr;
+        grid-template-areas:
+        "form-box7 form-box8  space      form-box11 form-box12"
+        "form-box9 form-box10 space      form-box3  form-box4"
+        "form-box1 form-box2  space      form-box5  placeholder"
+        "form-box6 form-box6  space      form-box13 placeholder";
+    }
+    .form-group label{
+        white-space: nowrap;
     }
 }
 
@@ -192,8 +290,18 @@ a{
         width: 80%;
         max-width: 1100px;
     }
+    
     .hero-section-title {
-        font-size: 5rem; /* Decreased from 8rem */
+        font-size: 5rem;
+    }
+
+    .booking-form{
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+        "form-box7 form-box8  space      form-box11 form-box12"
+        "form-box9 form-box10 space      form-box3  form-box4"
+        "form-box1 form-box2  space      form-box5  placeholder"
+        "form-box6 form-box6  space      form-box13 placeholder";
     }
 }
 
@@ -209,8 +317,8 @@ a{
     }
 }
 
-/* Small devices (landscape phones, 576px and down) */
-@media (max-width: 576px) {
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575px) {
     html {
         font-size: 0.7rem;
     }
@@ -235,52 +343,7 @@ a{
         font-size: 1.3rem;
         gap: 15px;
     }
-}
-
-.booking-form-section{
-    background-color: var(--pinkish);
-    padding: 6em 0 6em 0;
-}
-
-.booking-form{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 5em;
-}
-
-.form-grid-one{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-    "form-box1 form-box2"
-    "form-box3 form-box4"
-    "form-box5 form-box5"
-    "form-box6 form-box6";
-    gap: 2em;
-}
-
-.form-grid-two {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-        "form-box7 form-box8"
-        "form-box9 form-box10"
-        "form-box11 form-box12"
-        "form-box13 form-box13";
-    gap: 2em;
-}
-
-.form-group{
-    display: grid;
-    gap: 0.5em;
-    width:100%;
-}
-
-.form-actions .btn::before,
-.form-actions .btn::after{
-    border-color: var(--dark-blue);
-}
-.form-actions  .btn-before,
-.form-actions  .btn-after{
-    border-color: var(--dark-blue);
+    input, select{
+        height: 4rem;
+    }
 }
