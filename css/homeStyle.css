@@ -97,16 +97,8 @@
     padding: 60px 10%;
 }
 
-.why-choose h2{
-    font-size: 43px;
-    margin: 15px;
-}
-.why-choose .desc p{
-    margin: 15px;
-    font-size: 20px;
-}
 .why-choose .btn{
-    margin: 25px 0 0 350px;
+    /* margin: 25px 0 0 350px; */
     font-weight: bold;
 }
 .statics{
