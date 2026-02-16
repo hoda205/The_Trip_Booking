@@ -101,7 +101,7 @@
 /* ====blog Section start=== */
 .blog-img{
     background-image:
-    url(/assets/blog/blog.jpg) ;
+    url(/assets/blog/new-blog.jpg) ;
     background-position: center bottom 30px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -127,14 +127,53 @@
     font-size: 3rem;
 }
 /* ====Blog Section end=== */
+
+/* End Section Two */
+.intro .py{
+    padding: 4rem 0 0 0;
+}
+.intro .container p{
+    padding-bottom: 1rem;
+    font-size: 1.125rem;
+    font-weight: 400;
+    margin-top: 1.5rem !important;
+     margin-bottom: 1.5rem !important;
+}
+.intro .container h2{
+     margin-top: 1rem !important;
+     font-size: 2rem;
+}
 .intro{
-    margin: 15px;
-    height: 25rem;
+    width: 100%;
 }
-.intro p{
-    font-size: 25px;
-    margin: 15px 0 15px 0;
+ 
+/* // X-Small devices (portrait phones, less than 576px) */
+@media (min-width: 575.98px) { 
+    .social-icons{
+        display: flex;
+        justify-content: flex-start;
+    }
 }
+
+/* // Small devices (landscape phones, less than 768px) */
+@media (min-width: 767.98px) { 
+
+}
+
+/* // Medium devices (tablets, less than 992px) */
+@media (min-width: 991.98px) { 
+    .social-icons{
+        justify-content: start;
+    }
+    .intro .container p{
+    width: 50%;
+    }
+}
+/* End Section Two */
+
+
+
+
 /* ====Media=== */
 
 /* cards section */
@@ -160,36 +199,6 @@
     font-size: 18px;
     margin: 20px;
   }
-  /* reduce social icon size */
-    .icon-circle{ width: 40px; height: 40px; }
-    .icon-circle i{ font-size: 20px; }
-
-
+  
 }
-/* intro section */
-@media screen and (max-width: 1024px) {
-    .intro {
-        height: auto; 
-        padding: 20px;
-    }
-    .intro p {
-        font-size: 18px;
-    }
-    .intro h2 {
-        font-size: 28px;
-    }
-}
-
-/* reduce social icon size */
-@media screen and (max-width: 500px) {
-    .socials {
-        flex-direction: column;
-        gap: 10px;
-        align-items: center;
-    }
-    
-    .icon-circle{ width: 40px; height: 40px; }
-    .icon-circle i{ font-size: 20px; }
-}
-
 
