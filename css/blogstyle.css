@@ -128,13 +128,25 @@
 }
 /* ====Blog Section end=== */
 .intro{
-    margin: 15px;
+    margin-top: 15px;
     height: 25rem;
 }
-.intro p{
+.intro h2{
     font-size: 25px;
+    margin-top: 15px;
+}
+.intro p{
+    font-size: 15px;
     margin: 15px 0 15px 0;
 }
+.intro span{
+    padding: 5px;
+}
+
+
+
+
+
 /* ====Media=== */
 
 /* cards section */
@@ -191,5 +203,4 @@
     .icon-circle{ width: 40px; height: 40px; }
     .icon-circle i{ font-size: 20px; }
 }
-
 

@@ -9,37 +9,328 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">    
     <!-- CSS File -->
-    <link rel="stylesheet" href="css/homeStyle.css">
+    <link rel="stylesheet" href="css/contactstyle.css">
+    <!-- Global CSS Style -->
     <link rel="stylesheet" href="css/style.css">
-    
-    
+    <!-- Excursion CSS File -->
+    <link rel="stylesheet" href="css/excursionsStyle.css">
+
     <title>The Trip Booking - Excursions</title>
-
-    <meta name="description" content="TheTripBooking offers personalized Egypt tour packages, Nile cruises, classic tours, luxurious vacation trips and short excursions for unforgettable travel experiences.">
-    <meta name="keywords" content="Egypt tours, Nile cruise, Egypt vacation packages, travel in Egypt, Egypt tours booking, Luxor Aswan tours, Abu Simbel tours">
-    <meta name="robots" content="index, follow">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Open Graph (for social sharing) -->
-    <meta property="og:title" content="The Trip Booking | Best Egypt Tours & Vacation Packages">
-    <meta property="og:description" content="Explore Egypt with personalized tours, Nile cruises, classic destinations and luxury travel experiences by TheTripBooking.">
-    <meta property="og:image" content="https://www.thetripbooking.com/assets/homepage/homePage01.jpg">
-    <meta property="og:url" content="https://www.thetripbooking.com/">
-    <meta property="og:type" content="website">
-
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="The Trip Booking | Best Egypt Tours & Vacation Packages">
-    <meta name="twitter:description" content="Explore Egypt with personalized tours, Nile cruises, classic destinations and luxury travel experiences by TheTripBooking.">
-    <meta name="twitter:image" content="https://www.thetripbooking.com/assets/homepage/homePage01.jpg">
-    <link rel="icon" href="/assets/homePage/homePage01.webp" sizes="32x32" type="image/webp">
-   
-
 </head>
+
 <body>
+     
+    <header >
+        <nav class="d-flex container">
+            <div class="logo ">
+                <img class="logo" src="/assets/homePage/homePage01.webp" height="55">
+            </div>
+            
+            <div class="links text-black txt-bold">
+                
+                <a href="home.html" rel="noopener noreferrer" class="">Home</a>
+                <a href="tourPachages.html" rel="noopener noreferrer" class="Tour-Packages">Tour Packages</a>
+                <a href="excursions.html" rel="noopener noreferrer" class="Excursions active">Excursions</a>
+                <a href="tailorATour.html" rel="noopener noreferrer" class="Tailor-a-Tour">Tailor a Tour</a>
+                <a href="Blog.html" rel="noopener noreferrer" class="Blog">Blog</a>
+                <a href="contact.html" rel="noopener noreferrer" class="">Contact</a>
+                <a href="about.html" rel="noopener noreferrer" >About</a>
+            </div>
+        </nav>
+    </header> 
+
+     <br> <br> <br> <br>   
+
+    <main>
+        <section class="contact-img txt-white txt-center bg-light-orange">
+            <div class="txt-contact">
+                <h1>Excursions</h1>
+                <p style="font-size: small;"><a href="home.html" class="text-white">Home</a> / Excursions</p>
+            </div>
+        </section>
+        <section class="intro bg-light-orange">
+            <div class="container py">
+                <span class="befor-title ">EXCURSIONS</span>
+                <h2 class="title text-orange ">Excursion Intro</h2>
+                <p class="desc w-100">Welcome to TheTripBooking Excursions, your gateway to unforgettable short
+                    adventures.
+                    Dive into a world
+                    of immersive experiences and discover the essence of your destination in a limited time.</p>
+            </div>
+        </section>
+        <div class="container">
+            <div class="socials d-flex  justify-content-center">
+                <a href="#" class="text-white bg-dark-blue d-flex align-items-center justify-content-center">
+                    <i class="social-icon fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="#" class="text-white bg-dark-blue d-flex align-items-center justify-content-center">
+                    <i class="social-icon fa-brands fa-instagram"></i>
+                </a>
+                <a href="#" class="text-white bg-dark-blue d-flex align-items-center justify-content-center">
+                    <i class="social-icon fa-brands fa-tiktok"></i>
+                </a>
+            </div>
+        </div>
+        <section class="excursions">
+            <div class="container d-flex py  justify-between">
+                <form action="" class="filter w-100 border">
+                    <h3 class="text-orange">Filter and Sort</h3>
+                    <div class="group d-flex justify-between">
+                        <div>
+                            <p class="text-dark-blue">Sort by Price or Duration</p>
+                            <div class="border filter-list position-relative">
+                                Sort by ...
+                                <ul class="position-absolute border ">
+                                    <li class="border">Price</li>
+                                    <li class="border">Duration</li>
+                                    <li class="border">None</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="ranges">
+                            <p class="text-dark-blue">Price range</p>
+                            <div class="position-relative">
+                                <input class="position-absolute text-dark-blue" type="range" min="22" max="730"
+                                    value="22">
+                                <!-- <input class="position-absolute text-dark-blue" type="range" min="22" max="730" value="730"> -->
+                                <span class="text-orange position-absolute">$22</span>
+                                <span class="text-orange position-absolute">$730</span>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <div class="found w-100">
+                    <h3 class="text-orange border">Found 62 Excursion(s)</h3>
+                    <div class="cards d-flex flex-wrap justify-between">
+                        <div class="card  w-100 ">
+                            <div class="card-inner border">
+                                <div class="front">
+                                    <img class="w-100" src="./assets/Excursions/ExcursionsPage2.jpg"
+                                        alt="A lone camel walking across a vast, sunny desert landscape.">
+                                    <div class="card-content">
+                                        <h4 class="text-dark-blue">Visit to Birqash's Camel Market</h4>
+                                        <div class="d-flex justify-between flex-wrap">
+                                            <div>
+                                                <i class="fa-regular fa-calendar-days"></i>
+                                                <span>24 Hours</span>
+                                            </div>
+                                            <div>
+                                                <b>Price:
+                                                    <span class="text-orange">$115</span>
+                                                </b>
+                                            </div>
+                                            <div>
+                                                <i class="fa-solid fa-location-dot"></i>
+                                                <span>Birqash</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="back card-content">
+                                    <h4 class="text-orange">Excursion Itinerary</h4>
+                                    <p class="">Our representatives will pick you up from your accommodation in Cairo or Giza and transport you to Birqash, a small village north of Cairo, to visit the famed Camel Market. You will get a one-of-a-kind experience watching merchants buy and sell camels in market auctions, as well as dealers negotiate and make bargains. People of all socioeconomic backgrounds, as well as dealers, flock there to get relatively cheap and guaranteed healthy meat. Foreign tourists from all over the world visit this well-known market after viewing the Pharaonic structures to see the largest assemblage of camels (the desert ship). Later, you will be transferred from the Camel Market to your hotel.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card  w-100 ">
+                            <div class="card-inner border">
+                                <div class="front">
+                                    <img class="w-100" src="./assets/Excursions/ExcursionsPage3.jpg"
+                                        alt="A lone camel walking across a vast, sunny desert landscape.">
+                                    <div class="card-content">
+                                        <h4 class="text-dark-blue">Scuba diving in Sharm El-Sheikh</h4>
+                                        <div class="d-flex justify-between flex-wrap">
+                                            <div>
+                                                <i class="fa-regular fa-calendar-days"></i>
+                                                <span>24 Hours</span>
+                                            </div>
+                                            <div>
+                                                <b>Price:
+                                                    <span class="text-orange">$115</span>
+                                                </b>
+                                            </div>
+                                            <div>
+                                                <i class="fa-solid fa-location-dot"></i>
+                                                <span>Birqash</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="back card-content">
+                                    <h4 class="text-orange">Excursion Itinerary</h4>
+                                    <p>Indulge in the thrilling world of scuba diving and discover the enticing mysteries that lie under the surface. Immerse yourself in the ideal introduction to the breathtaking underwater world, where every moment offers enchantment and discovery. Prepare to plunge into the depths of Dive Theory, obtaining a thorough understanding of the underlying life. With expert guidance, embark on a transforming trip that involves a dip in a peaceful swimming pool or a gentle hug in shallow sea waters. Feel the excitement as you dive into the wide waters, reaching a maximum depth of 12 meters and encountering a brilliant tapestry of awe-inspiring aquatic species. Be mesmerized by the colors, the intricate dance of fish schools, and the tranquil elegance of sea animals that will take your breath away.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card  w-100 ">
+                            <div class="card-inner border">
+                                <div class="front">
+                                    <img class="w-100" src="./assets/Excursions/ExcursionsPage2.jpg"
+                                        alt="A lone camel walking across a vast, sunny desert landscape.">
+                                    <div class="card-content">
+                                        <h4 class="text-dark-blue">
+A trip to SS Thistlegorm for wreck diving</h4>
+                                        <div class="d-flex justify-between flex-wrap">
+                                            <div>
+                                                <i class="fa-regular fa-calendar-days"></i>
+                                                <span>24 Hours</span>
+                                            </div>
+                                            <div>
+                                                <b>Price:
+                                                    <span class="text-orange">$115</span>
+                                                </b>
+                                            </div>
+                                            <div>
+                                                <i class="fa-solid fa-location-dot"></i>
+                                                <span>Birqash</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="back card-content">
+                                    <h4 class="text-orange">Excursion Itinerary</h4>
+                                    <p class="">Our representatives will pick you up from your accommodation in Cairo or Giza and transport you to Birqash, a small village north of Cairo, to visit the famed Camel Market. You will get a one-of-a-kind experience watching merchants buy and sell camels in market auctions, as well as dealers negotiate and make bargains. People of all socioeconomic backgrounds, as well as dealers, flock there to get relatively cheap and guaranteed healthy meat. Foreign tourists from all over the world visit this well-known market after viewing the Pharaonic structures to see the largest assemblage of camels (the desert ship). Later, you will be transferred from the Camel Market to your hotel.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card  w-100 ">
+                            <div class="card-inner border">
+                                <div class="front">
+                                    <img class="w-100" src="./assets/Excursions/ExcursionsPage2.jpg"
+                                        alt="A lone camel walking across a vast, sunny desert landscape.">
+                                    <div class="card-content">
+                                        <h4 class="text-dark-blue">Visit to Birqash's Camel Market</h4>
+                                        <div class="d-flex justify-between flex-wrap">
+                                            <div>
+                                                <i class="fa-regular fa-calendar-days"></i>
+                                                <span>24 Hours</span>
+                                            </div>
+                                            <div>
+                                                <b>Price:
+                                                    <span class="text-orange">$115</span>
+                                                </b>
+                                            </div>
+                                            <div>
+                                                <i class="fa-solid fa-location-dot"></i>
+                                                <span>Birqash</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="back card-content">
+                                    <h4 class="text-orange">Excursion Itinerary</h4>
+                                    <p class="">Our representatives will pick you up from your accommodation in Cairo or Giza and transport you to Birqash, a small village north of Cairo, to visit the famed Camel Market. You will get a one-of-a-kind experience watching merchants buy and sell camels in market auctions, as well as dealers negotiate and make bargains. People of all socioeconomic backgrounds, as well as dealers, flock there to get relatively cheap and guaranteed healthy meat. Foreign tourists from all over the world visit this well-known market after viewing the Pharaonic structures to see the largest assemblage of camels (the desert ship). Later, you will be transferred from the Camel Market to your hotel.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contacts">
+            <!--Top Information-->
+
+            <div class="top-info text-white">
+                <div class="top-info-container container">
+
+                    <div class="info-box d-flex border-right">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <div>
+                            <p>Address</p>
+                            <span>27 Nazih Khalifa St., El-Montaza, Heliopolis, Cairo - Egypt</span>
+                    
+                        </div>
+                    </div>
+                    <div class="info-box d-flex border-right">
+                        <i class="fa-solid fa-envelope"></i>
+                        <div>
+                            <p>Email</p>
+                            <span>info@thetripbooking.com</span>
+                        </div>
+                    </div>
+
+                    <div class="info-box d-flex ">
+                        <i class="fa-solid fa-phone"></i>
+                        <div>
+                            <p>Phone</p>
+                            <span>+201005353909</span>
+
+                        </div>
+                        
+                    </div>
+
+                </div>
+            </div> 
+        
+        </section>
+    </main>
+    <footer class="footer text-white">
+        <div class="footer-container container">
+
+            
+
+            <!-- About -->
+            <div class="footer-col">
+            <img src="/assets/homePage/homePage01.webp">
+            <p>
+                TheTripBooking provides tours through all of Egypt to classic and
+                luxurious tours, Nile cruises, short excursions and more.
+            </p>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-col">
+            <h3>Quick Links</h3> <br>
+            <ul>
+                <li><a href="home.html" >Home</a></li>
+                <li><a href="tourPachages.html">Tour Packages</a></li>
+                <li><a href="excursions.html" class="active">Excursions</a></li>
+                <li><a href="tailorATour.html">Tailor a Tour</a></li>
+                <li><a href="Blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            </div>
+
+            <!-- Info -->
+            <div class="footer-col">
+            <h3>Information</h3> <br>
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#why-choose">Why Choose Us</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+            </ul>
+            </div>
+
+            <!-- Newsletter -->
+            <div class="footer-col">
+            <h3>Newsletter</h3> <br>
+            <p>Get the latest updates and offers</p>
+            <form class="newsletter d-flex">
+                <input type="text" placeholder="Full Name">
+                <input type="email" placeholder="Email">
+                <button type="submit">Send</button>
+            </form>
+
+            <div class="social">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>2026 &copy; THETRIPBOOKING.com. All rights reserved.</p>
+        </div>
+    </footer>
 
 </body>
+
 </html>

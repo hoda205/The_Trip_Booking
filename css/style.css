@@ -289,27 +289,7 @@ nav a.active{
     padding-top: 15px;
     margin: 35px;
 }
-.icon-circle{
-    width: 50px;
-    height: 50px;
-    background-color:rgb(10, 10, 10);
-    border-radius: 50%;
-    cursor: pointer;
-    position: relative;
-    transition: 0.2s;
-}
-.icon-circle i{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    font-size: 25px;
-    display: block;
-    color: white;
-    transform: translate(-50%, -50%);
-}
-.icon-circle:hover{
-    box-shadow: 0 0 2px 2px var(--orange); 
-}
+
 
 /* ======== Footer======== */
 
@@ -385,16 +365,16 @@ nav a.active{
 /* Social icons - after text */
 .socials {
   margin-top: 15px;
-  gap: 75px;
+  gap: 777px;
 }
 
 .socials a {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  font-size: 35px;
-  width: 65px;
-  height: 65px;
+  font-size: 30px;
+  width: 45px;
+  height: 45px;
   border-radius: 50%;
   background: #1e293b;
   color: white;
@@ -532,6 +512,8 @@ nav a.active{
     height: auto !important;
   }
 }
+
+
 /*about - contact - blog image*/
 @media (max-width: 1024px){
     /* reduce background image height */
