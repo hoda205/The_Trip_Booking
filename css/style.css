@@ -68,8 +68,8 @@ nav a.active{
     color: var(--dark-blue);
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    margin-bottom: 1rem;
-    font-weight: bold;
+     margin-bottom: 1.5rem !important;
+     font-weight: bold;
 }
 .befor-title::before{
     content: "";
@@ -124,12 +124,14 @@ nav a.active{
     height: 100%;
     object-fit: cover;
 }
-
+.w-100{
+    width: 100%;
+}
 .container{
     width: 95%;
     margin: auto;
 }
-.sec-container{
+.sec-bg-color{
     background-color: rgba(250, 235, 215, 0.486);
 }
 
@@ -275,19 +277,16 @@ nav a.active{
      padding: 5px 5px 5px 5px ;
 }
 .info-box i {
-  font-size: 40px;
+  font-size: 25px;
  }
 .contacts span:hover{
     color: var(--orange);
 
 }
 .contacts p{
-    font-size: 25px;
-}
-
-.socials{
-    padding-top: 15px;
-    margin: 35px;
+    font-size: 1rem;
+     margin-bottom: .5rem !important;
+      margin-left: .5rem !important;
 }
 
 
@@ -362,28 +361,26 @@ nav a.active{
   transform: scale(1.05);
 }
 
-/* Social icons - after text */
-.socials {
-  margin-top: 15px;
-  gap: 777px;
+.social-icons{
+    margin: 1.5rem 0 0 0;
+    flex-direction: row;
+    gap: 1.57rem;
 }
-
-.socials a {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 30px;
-  width: 45px;
-  height: 45px;
-  border-radius: 50%;
-  background: #1e293b;
-  color: white;
-  margin-right: 8px;
-  transition: 0.3s;
+ .social-icons a i{
+    font-size: 1.125rem;
+    margin: 25%;
+    color: var(--white);
 }
-
-.socials a:hover{
-  box-shadow: 0 0 2px 2px var(--orange);
+ .social-icons a {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-right: .75rem;
+    border-radius: 50%;
+    transition: all  0.3s ease-in-out;
+    border: 2px solid transparent;
+}
+ .social-icons a:hover{
+    box-shadow: 0 0 1px 2px var(--orange);
 }
 
 
