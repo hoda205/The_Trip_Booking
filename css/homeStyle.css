@@ -79,6 +79,7 @@
 }
 .welcome .div-of-img img{
     border-radius: 0.5rem;
+    object-position: top;
 }
 
 
