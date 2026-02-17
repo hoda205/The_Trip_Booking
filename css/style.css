@@ -93,7 +93,12 @@ nav i{
     font-size: 1.5rem;
     display: inline-block;
 }
-nav i:hover + .links{
+nav button:has(i){
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+nav button:hover + .links{
     display: block;
     background-color: var(--white);
 }
