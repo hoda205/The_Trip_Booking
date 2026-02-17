@@ -20,7 +20,7 @@ XX-Large devices (larger desktops, 1400px and up)
 
 :root{
     --orange: rgb(248, 112, 96);
-    --dark-blue: rgb(39, 38, 53);
+    --dark-blue: #272635;
     --gray: #ffffffbf;
     --pinkish: #fff8f7f5;
 }
@@ -57,7 +57,7 @@ a{
 
 .container{
     width: 95%;
-    max-width: 800px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -130,7 +130,7 @@ a{
 
 .booking-form-section{
     background-color: var(--pinkish);
-    min-height: 80vh;
+    min-height: 60vh;
     padding: 2rem 0;
 }
 
@@ -169,7 +169,7 @@ a{
     -moz-border-radius:0.5rem;
     -ms-border-radius:0.5rem;
     -o-border-radius:0.5rem;
-    padding: 0.5em 0.75em;
+    padding: 0.4em 0.75em;
     width: 100%;
 }
 
@@ -201,7 +201,7 @@ a{
     font-size: 1.5rem;
 }
 input, select{
-    height: 3rem;
+    height: 2.5rem;
     background-color: white;
 }
 /* Small devices (landscape phones, 576px and up) */
@@ -247,6 +247,113 @@ input, select{
     }
 }
 
+/*
+.fullname{
+    width: 700px;
+    height: 45px;
+    border-radius: 10px;
+    border: 1px rgba(194, 71, 71, 0.685) solid;
+    padding: 15px;
+}
+.email-phone,
+.country-nationality {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 100%;
+}
+
+.email-phone input,
+.country-nationality select {
+    flex: 1 1 200px;
+    min-width: 150px;
+}
+
+.gap-label{
+    gap: 10px;
+}
+.email-phone input , .country-nationality select{
+    width: 345px;
+    height: 45px;
+    border-radius: 10px;
+    border: 1px rgba(194, 71, 71, 0.685) solid;
+    padding: 15px;
+}
+input:focus, textarea:focus, select:focus{
+    outline: none;
+}
+textarea{
+    height: 136px;
+    width: 700px;
+    border-radius: 10px;
+    border: 1px rgba(194, 71, 71, 0.685) solid;
+    padding: 15px;
+}
+label{
+    padding: 15px;
+}
+
+
+.how-contact-txt{
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+.desc-contact{
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+.icon-contact{
+    font-size: 35px;
+    margin-right: 5px;
+}
+.in-touch a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    transition: all 0.15s;
+}
+.in-touch a:hover{
+    color: var(--orange);
+}
+.socials{
+    padding-top: 15px;
+    margin: 35px;
+}
+.icon-circle{
+    width: 50px;
+    height: 50px;
+    background-color:rgb(10, 10, 10);
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    transition: 0.2s;
+}
+.icon-circle i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 25px;
+    display: block;
+    color: white;
+    transform: translate(-50%, -50%);
+}
+.icon-circle:hover{
+    box-shadow: 0 0 2px 2px var(--orange);
+}
+.in-touch .btn{
+    color: black;
+}
+.in-touch .btn::before,
+.in-touch .btn::after{
+    border: 2px solid black;
+}
+.in-touch .btn .btn-before,
+.in-touch .btn .btn-after{
+    border: 1px solid black;
+}
+
+*/
+
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
@@ -268,7 +375,7 @@ input, select{
     }
 
     .booking-form{
-        grid-template-columns: 1fr 1fr 0.5fr 1fr 1fr;
+        grid-template-columns: 1.2fr 1.2fr 0.3fr 1fr 1fr;;
         grid-template-areas:
         "form-box7 form-box8  space      form-box11 form-box12"
         "form-box9 form-box10 space      form-box3  form-box4"
@@ -290,13 +397,13 @@ input, select{
         width: 80%;
         max-width: 1100px;
     }
-    
+
     .hero-section-title {
         font-size: 5rem;
     }
 
     .booking-form{
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1.3fr 1.3fr 0.4fr 1fr 1fr;;
         grid-template-areas:
         "form-box7 form-box8  space      form-box11 form-box12"
         "form-box9 form-box10 space      form-box3  form-box4"
@@ -344,6 +451,6 @@ input, select{
         gap: 15px;
     }
     input, select{
-        height: 4rem;
+        height: 3rem;
     }
 }
