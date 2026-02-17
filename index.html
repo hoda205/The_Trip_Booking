@@ -12,37 +12,59 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">    
     <!-- CSS File -->
-    <link rel="stylesheet" href="css/homeStyle.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/homeStyle.css">
+    
+    
     <title>The Trip Booking - HomePage</title>
+
+    <meta name="description" content="TheTripBooking offers personalized Egypt tour packages, Nile cruises, classic tours, luxurious vacation trips and short excursions for unforgettable travel experiences.">
+    <meta name="keywords" content="Egypt tours, Nile cruise, Egypt vacation packages, travel in Egypt, Egypt tours booking, Luxor Aswan tours, Abu Simbel tours">
+    <meta name="robots" content="index, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Open Graph (for social sharing) -->
+    <meta property="og:title" content="The Trip Booking | Best Egypt Tours & Vacation Packages">
+    <meta property="og:description" content="Explore Egypt with personalized tours, Nile cruises, classic destinations and luxury travel experiences by TheTripBooking.">
+    <meta property="og:image" content="https://www.thetripbooking.com/assets/homepage/homePage01.jpg">
+    <meta property="og:url" content="https://www.thetripbooking.com/">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="The Trip Booking | Best Egypt Tours & Vacation Packages">
+    <meta name="twitter:description" content="Explore Egypt with personalized tours, Nile cruises, classic destinations and luxury travel experiences by TheTripBooking.">
+    <meta name="twitter:image" content="https://www.thetripbooking.com/assets/homepage/homePage01.jpg">
+    <link rel="icon" href="/assets/homePage/homePage01.webp" sizes="32x32" type="image/webp">
+   
+
 </head>
 
 <body>
 
     <header >
-        <nav class="d-flex container">
-            <div class="logo">
-                <!--Changed the image format from .webp to .png and removed the height attribute from here and will style it in css instead. and deleted the class logo in the img tag-->
-                <img src="./assets/homePage/The_Trip_logo.png" alt="Website logo">
-            </div>
+        <nav class="d-flex container justify-between align-items-center flex-row">
+            <div class="logo-div align-items-center d-flex justify-between">
+                <img class="logo" src="/assets/homePage/homePage01.webp" height="55">
+            </div>      
+            <i class="fa-solid fa-bars"></i>
             <div class="links text-black txt-bold">
-                <a href="home.html" rel="noopener noreferrer" class="active">Home</a>
-                <a href="test.html" rel="noopener noreferrer" class="Tour-Packages">Tour Packages</a>
-                <a href="./excursions.html" rel="noopener noreferrer" class="Excursions">Excursions</a>
-                <a href="./tailorATour.html" rel="noopener noreferrer" class="Tailor-a-Tour">Tailor a Tour</a>
-                <a href="./Blog.html" rel="noopener noreferrer" class="Blog">Blog</a>
+                <a href="index.html" rel="noopener noreferrer" class="active">Home</a>
+                <a href="tourPachages.html" rel="noopener noreferrer" class="Tour-Packages">Tour Packages</a>
+                <a href="excursions.html" rel="noopener noreferrer" class="Excursions">Excursions</a>
+                <a href="tailorATour.html" rel="noopener noreferrer" class="Tailor-a-Tour">Tailor a Tour</a>
+                <a href="Blog.html" rel="noopener noreferrer" class="Blog">Blog</a>
                 <a href="contact.html" rel="noopener noreferrer" class="">Contact</a>
                 <a href="about.html" rel="noopener noreferrer" class="">About</a>
             </div>
         </nav>
     </header>
 
-     <br> <br> <br> <br>
     <main>
 
         <!--Hero Section-->
 
-        <section id="here" class="hero-sec position-relative sec-padding">
+        <section id="here" class="hero-sec position-relative sec-padding>
             <div class="vid-bg">
                 <video autoplay muted loop playsinline class="bg-video position-absolute cover">
                     <source src="assets/homePage/The Trip Booking Best Egypt Vacation Tour Packages.mp4" type="video/mp4">
@@ -58,65 +80,38 @@
                 </div>
             </div>
         </section>
-
+        
+        
         <!--Welcome Section-->
         <section id="welcome" class="welcome py ">
             <div class="container d-flex">
                 <div class="div-of-img">
-                    <img src="assets/homePage/Couple_Hiking.jpg" class="cover" alt="A surreal image of a woman with a red suitcase standing before a giant smartphone, where the Great Pyramids and desert rocks appear to be spilling out of the screen into reality">
+                    <img src="assets/homePage/homePage03.jpg" class="cover" alt="A surreal image of a woman with a red suitcase standing before a giant smartphone, where the Great Pyramids and desert rocks appear to be spilling out of the screen into reality">
                 </div>
                 <div>
-                    <span class="before-title">WELCOME TO</span>
+                    <span class="befor-title text-dark-blue">WELCOME TO</span>
                     <h2 class="title text-orange">TheTripBooking</h2>
                     <p class="desc text-black">
-                        Welcome to TheTripBooking, your gateway to extraordinary Egypt tour packages .We're here to turn your dream vacations into reality. With a customer-centric approach, we prioritize your needs, ensuring a seamless and unforgettable experience.
+                        Welcome to TheTripBooking, your gateway to extraordinary Egypt tour packages .We're here to turn
+                        your dream vacations into reality. With a customer-centric approach, we prioritize your needs,
+                        ensuring a seamless and unforgettable experience.
                     </p>
 
                     <p class="desc text-black">
-                        Our transparent pricing, personalized itineraries, and trusted partnerships with top hotels and airlines guarantee a tailored journey just for you. Let our passion for exploration ignite your wanderlust as we guide you through a world of remarkable destinations, creating cherished memories along the way.
+                        Our transparent pricing, personalized itineraries, and trusted partnerships with top hotels and
+                        airlines guarantee a tailored journey just for you. Let our passion for exploration ignite your
+                        wanderlust as we guide you through a world of remarkable destinations, creating cherished
+                        memories along the way.
                     </p>
+
         </section>
 
-    <!--====================           Destination section            ======================-->
-
-    <section class="destination">
-        <ul class="destination-grid">
-            <li class="destination-grid-cell">
-                <img src="./assets/homePage/Sharm_Elsheikh.jpg" alt="An ariel photo of Sharm Elskeikh, Egypt; including a mosque, mountains, palm trees, and beautiful houses">
-                <div class="destination-grid-cell-text">
-                    <h2>Sharm Elsheikh</h2>
-                    <p>Experience the ultimate resort getaway where the desert meets the deep blue sea. Known as the "City of Peace," Sharm El-Sheikh offers world-class diving in the Red Sea, luxury beachfront resorts, and vibrant nightlife. Whether you're exploring the coral reefs of Ras Mohammed or enjoying a sunset safari in the Sinai mountains.</p>
-                </div>
-            </li>
-            <li class="destination-grid-cell">
-                <img src="assets/homePage/Pyramids_of_Giza.jpg" alt= "A beautiful photo of the pyramids of Giza, Cairo, Egypt from a distance capturing their gigantic size, and displaying parking area, greenery, a mosque, and residential units">
-                <div class="destination-grid-cell-text">
-                    <h2>Pyramids of Giza</h2>
-                    <p>Stand in the shadow of the only surviving Wonder of the Ancient World. Located on the outskirts of Cairo, the Great Pyramids and the enigmatic Sphinx have captivated travelers for millennia. Walk through the sands of time as you explore these architectural marvels, built as eternal tombs for the mighty Pharaohs of Egypt's Old Kingdom.</p>
-                </div>
-            </li>
-            <li class="destination-grid-cell">
-                <img src="assets/homePage/Muhammed_Ali_Mosque.jpg" alt="A stunning image from a downward angle for Muhammed Ali's mosque in Cairo, Egypt">
-                <div class="destination-grid-cell-text">
-                    <h2>Muhammed Ali Mosque</h2>
-                    <p>Dominating the Cairo skyline from the heights of the Saladin Citadel, the Mosque of Muhammad Ali is a masterpiece of Ottoman architecture. With its towering minarets and massive silver domes, it is one of the most visible and beautiful landmarks in the city. Step inside to witness the breathtaking ornate ceilings and the shimmering glow of its grand chandeliers.</p>
-                </div>
-            </li>
-            <li class="destination-grid-cell">
-                <img src="assets/homePage/Al_Alkarnak_Temple.jpg" alt="Al Karnak temple, Luxor, Egypt with an overwhelming amount of tourists, capturing the true captivating essence of this historical beauty">
-                <div class="destination-grid-cell-text">
-                    <h2>Alkarnak Temple</h2>
-                    <p>Walk through a forest of towering stone columns at the largest religious complex ever built. Located in Luxor, the Karnak Temple complex is a vast open-air museum dedicated to the gods of Ancient Thebes. Marvel at the Great Hypostyle Hall, where 134 massive pillars still stand, covered in intricate hieroglyphics that tell the stories of Egypt’s golden age</p>
-                </div>
-            </li>
-        </ul>
-</section>
         <!--Why choose Section-->
 
         <section id="why-choose" class="why-choose">
-            <div class="desc">
-                <h2>Why choose TheTripBooking?</h2>
-                <p>
+            <div class="">
+                <h2 class="title">Why choose TheTripBooking?</h2>
+                <p class="desc">
                     Choose TheTripBooking for your next adventure. We prioritize you, offering transparent pricing, seamless
                     planning, and a wide range of options through our trusted partnerships. With a commitment to
                     sustainability and a genuine passion for exploration, we're here to make your travel dreams come true.
@@ -151,6 +146,7 @@
         </section>  
 
         <!--Tailor A Tour Section-->
+        
         <section class="cutom py bg-dark-blue text-white">
             <div class="container d-flex">
                 <div>
@@ -179,6 +175,8 @@
         </section>
 
         <!--Excursions Section-->
+
+
         <section  id="excursions" class="excursions-sec py">
             <div class="container d-flex">
                 <div class="div-of-img">
@@ -201,6 +199,7 @@ Whether you have a few hours or a day, our skillfully created itineraries will h
                 </div>
             </div>
         </section>
+
         <!--Information Section-->
         <section class="sec-container">
             <section id="info" class="info py ">
@@ -212,12 +211,14 @@ Whether you have a few hours or a day, our skillfully created itineraries will h
                         <p class="desc text-black">
                         Egypt is a captivating land where ancient wonders and vibrant culture converge. From the majestic pyramids and the mystical Nile River to the bustling markets and warm hospitality, Egypt offers a mesmerizing blend of history and modernity. Explore the rich tapestry of this enchanting country and embark on a journey filled with awe-inspiring sights and unforgettable experiences.
                         </p>
-                    </div>
+                    </div>    
                     <div class="div-of-img">
                         <img src="assets/homePage/homepage14.jpg" class="cover" alt="A surreal image of a woman with a red suitcase standing before a giant smartphone, where the Great Pyramids and desert rocks appear to be spilling out of the screen into reality">
                     </div>
+                    
+                        
             </section>
-        </section>
+        </section>    
 
         <section class="contacts">
             <!--Top Information-->
@@ -230,6 +231,7 @@ Whether you have a few hours or a day, our skillfully created itineraries will h
                         <div>
                             <p>Address</p>
                             <span>27 Nazih Khalifa St., El-Montaza, Heliopolis, Cairo - Egypt</span>
+                    
                         </div>
                     </div>
                     <div class="info-box d-flex border-right">
@@ -247,6 +249,7 @@ Whether you have a few hours or a day, our skillfully created itineraries will h
                             <span>+201005353909</span>
 
                         </div>
+
                     </div>
 
                 </div>
@@ -256,6 +259,8 @@ Whether you have a few hours or a day, our skillfully created itineraries will h
     </main>
     <footer class="footer text-white">
         <div class="footer-container container">
+
+            
 
             <!-- About -->
             <div class="footer-col">
@@ -270,12 +275,12 @@ Whether you have a few hours or a day, our skillfully created itineraries will h
             <div class="footer-col">
             <h3>Quick Links</h3> <br>
             <ul>
-                <li><a href="home.html" class="active">Home</a></li>
+                <li><a href="index.html" >Home</a></li>
                 <li><a href="tourPachages.html">Tour Packages</a></li>
                 <li><a href="excursions.html">Excursions</a></li>
                 <li><a href="tailorATour.html">Tailor a Tour</a></li>
                 <li><a href="Blog.html">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="contact.html" >Contact</a></li>
             </ul>
             </div>
 
@@ -283,7 +288,7 @@ Whether you have a few hours or a day, our skillfully created itineraries will h
             <div class="footer-col">
             <h3>Information</h3> <br>
             <ul>
-                <li><a href="about.html">About</a></li>
+                <li><a href="about.html" class="active">About</a></li>
                 <li><a href="#">Gallery</a></li>
                 <li><a href="#why-choose">Why Choose Us</a></li>
                 <li><a href="#">Privacy Policy</a></li>

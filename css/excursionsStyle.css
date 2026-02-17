@@ -275,3 +275,8 @@
 
 }
 /* End excursions Section  */
+
+/* huda add this */
+.newsletter{
+    flex-direction: column;
+}

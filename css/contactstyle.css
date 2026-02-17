@@ -114,7 +114,7 @@ label{
     cursor: pointer;
     transition: all 0.15s;
 }
-.in-touch a:hover{
+.how-contact-details a:hover{
     color: var(--orange);
 }
 .socials{
@@ -148,11 +148,11 @@ label{
 }
 .in-touch .btn::before,
 .in-touch .btn::after{
-    border: 2px solid black;
+    border: 2px solid var(--dark-blue);
 }
 .in-touch .btn .btn-befor,
 .in-touch .btn .btn-after{
-    border: 1px solid black;
+    border: 1px solid var(--dark-blue);
 }
 
 
