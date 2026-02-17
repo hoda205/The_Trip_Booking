@@ -1,0 +1,204 @@
+.main-div{
+    gap: 55px;
+}
+.card1, .card2 , .card3, .card4, .card5, .card6 {
+  width:500px ;   
+  height: 400px;
+  perspective: 1000px;
+  cursor: pointer;
+}
+
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.card1:hover .card-inner , .card2:hover .card-inner , .card3:hover .card-inner, .card4:hover .card-inner, .card5:hover .card-inner, .card6:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  
+}
+.card-front h1{
+    color: var(--white);
+    margin-top: 140px;
+    text-align: center;
+    font-size: 44px;
+}
+.card-back p{
+    margin: 35px;
+    font-size: 22px;
+    text-align: center;
+}
+.card1 .card-front , .card1 .card-back{
+    background-image: url(/assets/blog/abusimple.jpg);
+
+}
+
+.card2 .card-front , .card2 .card-back{
+    background-image: url(/assets/blog/valley.jpg);
+}
+
+.card3 .card-front , .card3 .card-back{
+    background-image: url(/assets/blog/nileview.webp);
+
+}
+
+.card4 .card-front , .card4 .card-back{
+    background-image: url(/assets/blog/loxuraswan.jpg);
+
+}
+.card5 .card-front , .card5 .card-back{
+    background-image: url(/assets/blog/sharm.jpg);
+
+}
+.card6 .card-front , .card6 .card-back{
+    background-image: url(/assets/blog/minya.jpg);
+
+}
+
+.card-front {
+  
+   background-size: cover;
+  background-position: center;
+  border: 1px solid #e5e7eb;
+}
+
+.card-back {
+  
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  color: white;
+  transform: rotateY(180deg);
+}
+.card-back::before{
+    content: "";
+  position: absolute;
+  inset: 0;
+  background-image: inherit;
+  background-size: inherit;
+  background-position: inherit;
+  filter: blur(8px);
+  transform: scale(1.1);
+  z-index: -1;
+}
+
+/* ====blog Section start=== */
+.blog-img{
+    background-image:
+    url(/assets/blog/new-blog.jpg) ;
+    background-position: center bottom 30px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 29rem;
+    background-attachment: fixed;
+    position: relative;
+}
+.blog-img::before{
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.226);
+    width: 100%;
+    height: 100%;
+}
+.txt-blog{
+    z-index: 2;
+    position: relative;
+    padding-top: 15rem;
+    font-size: 3rem;
+}
+/* ====Blog Section end=== */
+
+/* End Section Two */
+.intro .py{
+    padding: 4rem 0 0 0;
+}
+.intro .container p{
+    padding-bottom: 1rem;
+    font-size: 1.125rem;
+    font-weight: 400;
+    margin-top: 1.5rem !important;
+     margin-bottom: 1.5rem !important;
+}
+.intro .container h2{
+     margin-top: 1rem !important;
+     font-size: 2rem;
+}
+.intro{
+    width: 100%;
+}
+ 
+/* // X-Small devices (portrait phones, less than 576px) */
+@media (min-width: 575.98px) { 
+    .social-icons{
+        display: flex;
+        justify-content: flex-start;
+    }
+}
+
+/* // Small devices (landscape phones, less than 768px) */
+@media (min-width: 767.98px) { 
+
+}
+
+/* // Medium devices (tablets, less than 992px) */
+@media (min-width: 991.98px) { 
+    .social-icons{
+        justify-content: start;
+    }
+    .intro .container p{
+    width: 50%;
+    }
+}
+/* End Section Two */
+
+
+
+
+/* ====Media=== */
+
+/* cards section */
+/* Small screens */
+@media screen and (max-width: 1024px) {
+  .main-div {
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 20px;
+  }
+
+  .card1, .card2 , .card3, .card4, .card5, .card6 {
+    width: 90%; 
+    height: auto; 
+  }
+
+  .card-front h1 {
+    font-size: 28px; 
+    margin-top: 100px;
+  }
+
+  .card-back p {
+    font-size: 18px;
+    margin: 20px;
+  }
+  
+}
+

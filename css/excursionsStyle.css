@@ -1,0 +1,282 @@
+ html{
+    font-size: 12px;
+ }
+ @media (min-width: 575.98px) { 
+    html{font-size: 14px;}
+}
+@media (min-width: 767.98px) { 
+    html{
+        font-size: 16px;
+    }
+}
+.d-flex{
+    flex-direction: row;
+}
+ /* Start Section one */
+ .contact-img{
+    background-image: url('../assets/Excursions/ExcursionsPage1.jpg');
+}
+/* End Section One */
+/* Start Section Two */
+.intro .py{
+    padding: 4rem 0 0 0;
+}
+.intro .container p{
+    padding-bottom: 1rem;
+}
+ .social-icons{
+    margin: 1.5rem 0 0 0;
+    flex-direction: row;
+    gap: 0;
+}
+ .social-icons a i{
+    font-size: 1.125rem;
+}
+ .social-icons a {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-right: .75rem;
+    border-radius: 50%;
+    transition: all  0.3s ease-in-out;
+    border: 2px solid transparent;
+}
+ .social-icons a:hover{
+    border: 2px solid var(--orange);
+}
+/* // X-Small devices (portrait phones, less than 576px) */
+@media (min-width: 575.98px) { 
+    .social-icons{
+        display: flex;
+        justify-content: flex-start;
+    }
+}
+
+/* // Small devices (landscape phones, less than 768px) */
+@media (min-width: 767.98px) { 
+
+}
+
+/* // Medium devices (tablets, less than 992px) */
+@media (min-width: 991.98px) { 
+    .social-icons{
+        justify-content: start;
+    }
+    .intro .container p{
+    width: 50%;
+    }
+}
+/* End Section Two */
+/* Start excursions Section  */
+.excursions .border {
+    border: 1px solid #27263540;
+    border-radius: 0.25rem;
+    padding: 1rem;
+}
+.excursions .container {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.excursions .container  h3{
+    margin-bottom: 2rem;
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+.excursions .container .filter p{
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.excursions .container .filter .group{
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start;
+}
+.excursions .container .filter .group > div{
+    width: 100%;
+}
+/* =================Start Filter============ */
+/* Start Filter List */
+.excursions .container .filter-list,
+.excursions .container .filter-list ul li{
+    padding: 0.5rem 1rem;
+    font-weight: 400;
+}
+.excursions .container .filter-list ul li{
+    border-radius: 0;
+}
+.excursions .container .filter-list ul{
+    display: none;
+    padding: 0;
+    top: 110%;
+    left: 0;
+    right: 0;
+    background-color: white;
+    z-index: 5;
+}
+.excursions .container .filter-list ul li:last-child{
+    border-top: 1px solid #27263540;
+    border-radius: 0 0 0.25rem 0.25rem;
+}
+.excursions .container .filter-list ul li:first-child{
+    border-radius: 0.25rem 0.25rem 0 0;
+}
+.excursions .container .filter-list ul li{
+    border: none;
+}
+.excursions .container .filter-list:hover ul {
+    display: block;
+}
+.excursions .container .filter-list ul li:hover{
+    background-color: var(--dark-blue);
+    color: white;
+}
+/* End filter List */
+
+/* Start ranges  */
+
+.excursions .container .ranges {
+    padding-bottom: 3rem;
+}
+.excursions .container .ranges p{
+    margin: 0 0 1rem 0;
+}
+.excursions .container .ranges input[type="range"]{
+    width: 100%;
+}
+.excursions .container .ranges span{
+    bottom: -3rem;
+}
+.excursions .container .ranges span:first-of-type{
+    left: 0;
+}
+.excursions .container .ranges span:last-of-type{
+    right: 0;
+}
+
+/* End ranges  */
+/* =================End Filter============ */
+/* =================Start Found============ */
+.excursions .container .found h3{
+    border-color: transparent transparent #27263540 transparent;
+    margin-bottom: 2rem;
+}
+.excursions .container .found .cards{
+    gap: 1rem 1rem;
+    flex-direction: row;
+    justify-content: center;
+}
+.excursions .container .found .cards .card {
+    padding: 0;
+    height: 300px;
+    width: 60%;
+    perspective: 1000px;
+}
+.excursions .container .found .cards .card .card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+.excursions .container .found .cards .card .front,
+.excursions .container .found .cards .card .back {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+.excursions .container .found .cards .card .back {
+  transform: rotateY(180deg);
+  overflow-y: auto;
+}
+.card:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+.excursions .container .found .cards .card .card-content{
+    padding: 1rem;
+    font-size: 0.85rem;
+    font-weight: 300;
+}
+
+.excursions .container .found .cards .card .card-content > div {
+    row-gap: 1rem;
+    flex-direction: row;
+    column-gap: 0;
+}
+.excursions .container .found .cards .card .card-content  div > div{
+    width: 45%;
+}
+.excursions .container .found .cards .card h4{
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin: 0.5rem 0 1rem 0;
+}
+
+/* =================End Found============ */
+@media (min-width: 576px) {
+    .excursions .container .filter .group{
+        flex-direction: row;
+    }
+    .excursions .container .filter .group > div{
+        width: 50%;
+    }
+    .excursions .container .found .cards .card{
+        height: 360px;
+    }
+    
+}
+@media (min-width: 768px) {  
+    .excursions .container .found .cards {
+        justify-content: space-between;
+    }
+    .excursions .container .found .cards .card{
+        width: calc((100% / 2 ) - (1rem * 1 / 2));
+    }
+    .excursions .container .found .cards .card{
+        height: 400px;
+    }
+
+}
+@media (min-width: 992px) {  
+    .excursions .container .filter{
+        width: 24%;
+    }
+    .excursions .container .found{
+        width: 74%;
+    }
+    .excursions .container {
+        flex-direction: row;
+    }
+    .excursions .container .filter .group > div{
+        width: 100%;
+    }
+    .excursions .container .filter .group{
+        flex-direction: column;
+    }
+    .excursions .container .found .cards .card{
+        width: calc((100% / 3 ) - (1rem * 2 / 3));
+    }
+    .excursions .container .found .cards .card{
+        height: 360px;
+    }
+}
+@media (min-width: 1200px) {  
+    .excursions .container {
+        flex-direction: row;
+    }
+
+}
+@media (min-width: 1400px) {  
+
+}
+/* End excursions Section  */
+
+/* huda add this */
+.newsletter{
+    flex-direction: column;
+}
