@@ -36,7 +36,7 @@
 
 /* =======Start Welcome Section=========== */
 
-.welcome{
+/* .welcome{
     background-color: var(--white);
 }
 
@@ -65,12 +65,12 @@
 .welcome p{
     margin: 12px;
     font-size: 22px;
-}
+} */
 
 /* ======== end welcome Section======== */
 
 /* ======== Start Why Choose Section======== */
-.why-choose{
+/* .why-choose{
     
     background-image: url(/assets/homePage/whychoose.png);
     background-attachment:fixed;
@@ -97,7 +97,7 @@
     margin: 15px;
     text-align: center;
     font-size: 20px;
-}
+} */
 /* ======== End Why Choose Section======== */
 
 /* ======== Start About Text Section======== */
