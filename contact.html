@@ -42,28 +42,24 @@
 <body>
 
     <header >
-        <nav class="d-flex container">
-            <div class="logo ">
+        <nav class="d-flex container justify-between align-items-center flex-row">
+            <div class="logo-div align-items-center d-flex justify-between">
                 <img class="logo" src="/assets/homePage/homePage01.webp" height="55">
-            </div>
-            
+            </div>      
+            <button>
+                <i class="fa-solid fa-bars"></i>
+            </button>
             <div class="links text-black txt-bold">
-                
                 <a href="index.html" rel="noopener noreferrer" class="">Home</a>
                 <a href="tourPachages.html" rel="noopener noreferrer" class="Tour-Packages">Tour Packages</a>
-                <a href="excursions.html" rel="noopener noreferrer" class="Excursions">Excursions</a>
+                <a href="excursions.html" rel="noopener noreferrer" class="Excursions ">Excursions</a>
                 <a href="tailorATour.html" rel="noopener noreferrer" class="Tailor-a-Tour">Tailor a Tour</a>
-                <a href="test.html" rel="noopener noreferrer" class="Tour-Packages">Tour Packages</a>
-                <a href="" rel="noopener noreferrer" class="Excursions">Excursions</a>
-                <a href="" rel="noopener noreferrer" class="Tailor-a-Tour">Tailor a Tour</a>
                 <a href="Blog.html" rel="noopener noreferrer" class="Blog">Blog</a>
                 <a href="contact.html" rel="noopener noreferrer" class="active">Contact</a>
-                <a href="about.html" rel="noopener noreferrer" >About</a>
+                <a href="about.html" rel="noopener noreferrer" class="">About</a>
             </div>
         </nav>
-    </header>
-
-     <br> <br> <br> <br>  
+    </header> 
 
     <main>
 
@@ -84,7 +80,7 @@
                 <div class="hear d-flex  gap">
                     <div class="form">
                         <form>
-                            <label>Full Name</label> <br> 
+                            <label>Full Name</label> <br>  
                             <input class="fullname" type="name" placeholder="Enter your full name!"> <br> <br>
                             <div class="email-phone d-flex gap-label">
                                 <div class="email">
@@ -153,7 +149,7 @@
                         <div class="address d-flex gap-label">
                             <i class="icon-contact web-color fa-solid fa-location-dot"></i>
                             <div>
-                                <h3>Address</h3>
+                                <span>Address</span>
                                 <a href="https://www.google.com/maps?q=Cairo">27 Nazih Khalifa St., El-Montaza, Heliopolis, Cairo - Egypt.</a>
                             </div>
 
@@ -163,7 +159,7 @@
                             <div class="email d-flex gap-label">
                                 <i class="icon-contact web-color fa-regular fa-envelope"></i>
                                 <div>
-                                    <h3>Email</h3>
+                                    <span>Email</span>
                                     <a href="mailto:info@thetripbooking.com">info@thetripbooking.com</a>
                                 </div>
                             </div> <br> <br>
@@ -172,7 +168,7 @@
                             <div class="phone d-flex gap-label">
                                 <i class=" icon-contact web-color fa-solid fa-phone"></i>
                                 <div>
-                                    <h3>Phone</h3>
+                                    <span>Phone</span>
                                     <a href="tel:+201003539909">+201003539909</a>
                                 </div>
                             </div>   
@@ -245,7 +241,9 @@
 
             <!-- About -->
             <div class="footer-col">
-            <img src="/assets/homePage/homePage01.webp">
+            <div class="d-flex justify-content-center">
+                <img src="/assets/homePage/homePage01.webp" >
+            </div>
             <p>
                 TheTripBooking provides tours through all of Egypt to classic and
                 luxurious tours, Nile cruises, short excursions and more.
@@ -261,7 +259,7 @@
                 <li><a href="excursions.html">Excursions</a></li>
                 <li><a href="tailorATour.html">Tailor a Tour</a></li>
                 <li><a href="Blog.html">Blog</a></li>
-                <li><a href="contact.html" class="active">Contact</a></li>
+                <li><a href="contact.html" >Contact</a></li>
             </ul>
             </div>
 
@@ -269,9 +267,9 @@
             <div class="footer-col">
             <h3>Information</h3> <br>
             <ul>
-                <li><a href="about.html">About</a></li>
+                <li><a href="about.html" class="active">About</a></li>
                 <li><a href="#">Gallery</a></li>
-                <li><a href="index.html#why-choose">Why Choose Us</a></li>
+                <li><a href="#why-choose">Why Choose Us</a></li>
                 <li><a href="#">Privacy Policy</a></li>
                 <li><a href="#">Terms & Conditions</a></li>
             </ul>
@@ -300,6 +298,7 @@
             <p>2026 &copy; THETRIPBOOKING.com. All rights reserved.</p>
         </div>
     </footer>
+
 
 </body>
 

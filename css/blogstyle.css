@@ -1,5 +1,5 @@
 .main-div{
-    gap: 55px;
+    gap: 3rem;
 }
 .card1, .card2 , .card3, .card4, .card5, .card6 {
   width:500px ;   
@@ -98,6 +98,14 @@
   z-index: -1;
 }
 
+.cards .main-div h3{
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2.5rem;
+  color: var(--white);
+}
 /* ====blog Section start=== */
 .blog-img{
     background-image:
@@ -125,6 +133,10 @@
     position: relative;
     padding-top: 15rem;
     font-size: 3rem;
+    
+}
+.txt-blog h1, .txt-blog p{
+  text-shadow: 1px 1px 2px black;
 }
 /* ====Blog Section end=== */
 
@@ -182,7 +194,7 @@
   .main-div {
     flex-wrap: wrap; 
     justify-content: center; 
-    gap: 20px;
+    gap: 2rem;
   }
 
   .card1, .card2 , .card3, .card4, .card5, .card6 {
@@ -201,4 +213,3 @@
   }
   
 }
-

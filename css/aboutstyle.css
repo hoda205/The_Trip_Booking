@@ -107,19 +107,30 @@
     padding-bottom: 55px;
 }
 .about-txt p{
-    margin: 5px;
-    font-size: 19px;
+    font-size: 1.125rem;
+    font-weight: 350;
+    margin-top: .5rem !important;
 }
-.about-txt span{
-    font-size: 19px;
+.about-txt h2{
+    font-size: 1.5rem;
+}
+.about-txt strong{
+    font-size: 1.125rem;
 }
 .about-txt ul li{
-    margin: 4px;
+    margin-bottom: 2.2rem;
 }
 
 .about-txt h2{
     color: var(--orange);
 
+}
+.values h2{
+    padding-bottom: 1.7rem;
+}
+
+.mission , .vision, .values{
+    margin-bottom: .7rem;
 }
 
 /* ======== End About Text Section======== */

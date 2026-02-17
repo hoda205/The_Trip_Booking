@@ -1,6 +1,9 @@
 /* intro */
-
-.tour-packages-intro {
+ .contact-img{
+    background-image: url(/assets/tourpackages/TourPackages.png);
+    background-position: top;
+}
+/* .tour-packages-intro {
     background-image: url(/assets/tourpackages/TourPackages.png);
     background-attachment: scroll;
     background-position: center;
@@ -40,7 +43,7 @@
 
 main .social {
     padding-left: 15%;
-}
+} */
 
 /*---------------------------------------*/
 
@@ -49,12 +52,19 @@ main .social {
 .Tour-types span,
 .cities span {
     display: inline-block;
-    border: 0.5px solid #7A869A;
+    border: 0.5px solid var(--dark-blue);
     border-radius: 5px;
-    padding: 2%;
+    padding: 1%;
     margin: 1%;
-    color: #7A869A;
-
+    color: var(--dark-blue);
+    transition: background-color 0.3s, color 0.3s;
+    font-size: 1rem;
+}
+.Tour-types span:hover,
+.cities span:hover {
+    background-color: var(--dark-blue);
+    color: white;
+    cursor: pointer;
 }
 
 .Tour-types,
@@ -74,27 +84,23 @@ main .social {
 
 .book {
     display: flex;
-    padding-top: 1%;
-    margin-left: 45%;
-    font-size: 2rem;
-    margin-bottom: 15%;
+    justify-content: center;
 }
 
 .book .btn {
     color: var(--dark-blue);
-
+    margin-top: 2.5rem;
 }
 
 .book .btn::before,
-.book .btn::after {
-    border-color: var(--dark-blue);
-}
-
+.book .btn::after, 
 .book .btn-befor,
 .book .btn-after {
     border-color: var(--dark-blue);
 }
-
+.book .btn:hover {
+    color: var(--orange);
+}
 /* huda add this */
 .newsletter{
     flex-direction: column;
