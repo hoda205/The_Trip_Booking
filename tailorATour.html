@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,11 +12,7 @@
         rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">    
-    <!-- CSS File -->
-    <link rel="stylesheet" href="css/homeStyle.css">
-    <link rel="stylesheet" href="css/style.css">
-    
-    
+
     <title>The Trip Booking - Tailor A Tour</title>
 
     <meta name="description" content="TheTripBooking offers personalized Egypt tour packages, Nile cruises, classic tours, luxurious vacation trips and short excursions for unforgettable travel experiences.">
@@ -36,22 +33,26 @@
     <meta name="twitter:description" content="Explore Egypt with personalized tours, Nile cruises, classic destinations and luxury travel experiences by TheTripBooking.">
     <meta name="twitter:image" content="https://www.thetripbooking.com/assets/homepage/homePage01.jpg">
     <link rel="icon" href="/assets/homePage/homePage01.webp" sizes="32x32" type="image/webp">
-   
 
+    <!-- CSS File -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/tailor_tour.css">>
 </head>
+
 <body>
-    <header >
+
+    <header>
         <nav class="d-flex container justify-between align-items-center flex-row">
             <div class="logo-div align-items-center d-flex justify-between">
                 <img class="logo" src="/assets/homePage/homePage01.webp" height="55">
-            </div>      
+            </div>
             <button>
                 <i class="fa-solid fa-bars"></i>
             </button>
             <div class="links text-black txt-bold">
                 <a href="index.html" rel="noopener noreferrer" class="">Home</a>
                 <a href="tourPachages.html" rel="noopener noreferrer" class="Tour-Packages">Tour Packages</a>
-                <a href="excursions.html" rel="noopener noreferrer" class="Excursions ">Excursions</a>
+                <a href="excursions.html" rel="noopener noreferrer" class="Excursions">Excursions</a>
                 <a href="tailorATour.html" rel="noopener noreferrer" class="Tailor-a-Tour active">Tailor a Tour</a>
                 <a href="Blog.html" rel="noopener noreferrer" class="Blog">Blog</a>
                 <a href="contact.html" rel="noopener noreferrer" class="">Contact</a>
@@ -60,64 +61,163 @@
         </nav>
     </header>
     <main>
-
+        <section class="hero-section">
+            <img src="./assets/Tailor Tour/Tailor_a_tour_hero_section_image.jpg"
+                alt="a photo of a cat lying on mats in a historical place">
+            <div class="hero-section-title">
+                <h2>Tailor a Tour</h2>
+            </div>
+        </section>
+        <section class="explanation container">
+            <h2 class="small-title">Tailor a Tour</h2>
+            <p class="main-title">Customize Your Tour</p>
+            <p>Choose your dream places and activities that fit your interests, time, and budget. Let us create a customized
+                schedule to fulfill your vacation desires.</p>
+            <ul>
+                <li><a href="https://www.youtube.com/watch?v=EE-xtCF3T94" class="icon-circle"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="https://www.youtube.com/watch?v=Mh4f9AYRCZY" class="icon-circle"><i class="fa-brands fa-square-instagram"></i></a>
+                </li>
+                <li><a href="https://www.youtube.com/watch?v=EE-xtCF3T94" class="icon-circle"><i class="fa-brands fa-discord"></i></a></li>
+            </ul>
+        </section>
+        <section class="booking-form-section">
+            <div class="container">
+                <h2 class="form-title">Book a Tour</h2>
+                <form class="booking-form">
+                    <div class="form-group" style="grid-area: form-box7">
+                        <label for="first-name">First Name</label>
+                        <input type="text" id="first-name" name="first-name" required>
+                    </div>
+                    <div class="form-group" style="grid-area: form-box8">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" id="last-name" name="last-name" required>
+                    </div>
+                    <div class="form-group" style="grid-area: form-box9">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group" style="grid-area: form-box10">
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group" style="grid-area: form-box11">
+                        <label for="country">Country</label>
+                        <select id="country" name="country" required>
+                            <option value=""></option>
+                            <option value="egypt">Egypt</option>
+                            <option value="usa">United States</option>
+                            <option value="uk">United Kingdom</option>
+                            <option value="canada">Canada</option>
+                            <option value="australia">Australia</option>
+                        </select>
+                    </div>
+                    <div class="form-group" style="grid-area: form-box12">
+                        <label for="nationality">Nationality</label>
+                        <select id="nationality" name="nationality" required>
+                            <option value="default">select</option>
+                            <option value="egyptian">Egyptian</option>
+                            <option value="american">American</option>
+                            <option value="british">British</option>
+                            <option value="canadian">Canadian</option>
+                            <option value="australian">Australian</option>
+                        </select>
+                    </div>
+                    <div class="form-group" style="grid-area: form-box1;">
+                        <label for="from-date">From Date</label>
+                        <input type="date" id="from-date" name="from-date" placeholder="dd/mm/yyyy" required>
+                    </div>
+                    <div class="form-group" style="grid-area: form-box2;">
+                        <label for="to-date">To Date</label>
+                        <input type="date" id="to-date" name="to-date" placeholder="dd/mm/yyyy" required>
+                    </div>
+                    <div class="form-group" style="grid-area: form-box3;">
+                        <label for="adults">Adults (+12 years)</label>
+                        <input type="number" id="adults" name="adults" value="2" min="0" required>
+                    </div>
+                    <div class="form-group" style="grid-area: form-box4;">
+                        <label for="children">Children (6 to 12 years)</label>
+                        <input type="number" id="children" name="children" value="0" min="0">
+                    </div>
+                    <div class="form-group" style="grid-area: form-box5;">
+                        <label for="infants">Infants (0 to 2 years)</label>
+                        <input type="number" id="infants" name="infants" value="0" min="0">
+                    </div>
+                    <div class="form-group" style="grid-area: form-box6;">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" draggable="false" placeholder="Any comments?"></textarea>
+                    </div>
+    
+                    <div class="form-actions" style="grid-area: form-box13">
+                        <button type="submit" class="btn">
+                            <span class="btn-before"></span>
+                            <span class="btn-before"></span>
+                            SUBMIT
+                            <span class="btn-after"></span>
+                            <span class="btn-after"></span>
+                        </button>
+                    </div>
+                </form>
+                <div style="grid-area: space;">
+                <div style="grid-area: placeholder;"> <!--used to create gaps between two sections-->
+            </div>
+        </section>
     </main>
     <footer class="footer text-white">
         <div class="footer-container container">
 
-            
+
 
             <!-- About -->
             <div class="footer-col">
-            <div class="d-flex justify-content-center">
-                <img src="/assets/homePage/homePage01.webp">
-            </div>
-            <p>
-                TheTripBooking provides tours through all of Egypt to classic and
-                luxurious tours, Nile cruises, short excursions and more.
-            </p>
+                <div class="d-flex justify-content-center">
+                    <img src="/assets/homePage/homePage01.webp">
+                </div>
+                <p>
+                    TheTripBooking provides tours through all of Egypt to classic and
+                    luxurious tours, Nile cruises, short excursions and more.
+                </p>
             </div>
 
             <!-- Quick Links -->
             <div class="footer-col">
-            <h3>Quick Links</h3> <br>
-            <ul>
-                <li><a href="index.html" >Home</a></li>
-                <li><a href="tourPachages.html">Tour Packages</a></li>
-                <li><a href="excursions.html">Excursions</a></li>
-                <li><a href="tailorATour.html">Tailor a Tour</a></li>
-                <li><a href="Blog.html">Blog</a></li>
-                <li><a href="contact.html" >Contact</a></li>
-            </ul>
+                <h3>Quick Links</h3> <br>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="tourPachages.html">Tour Packages</a></li>
+                    <li><a href="excursions.html">Excursions</a></li>
+                    <li><a href="tailorATour.html">Tailor a Tour</a></li>
+                    <li><a href="Blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
             </div>
 
             <!-- Info -->
             <div class="footer-col">
-            <h3>Information</h3> <br>
-            <ul>
-                <li><a href="about.html" class="active">About</a></li>
-                <li><a href="#">Gallery</a></li>
-                <li><a href="#why-choose">Why Choose Us</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">Terms & Conditions</a></li>
-            </ul>
+                <h3>Information</h3> <br>
+                <ul>
+                    <li><a href="about.html" class="active">About</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#why-choose">Why Choose Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                </ul>
             </div>
 
             <!-- Newsletter -->
             <div class="footer-col">
-            <h3>Newsletter</h3> <br>
-            <p>Get the latest updates and offers</p>
-            <form class="newsletter d-flex">
-                <input type="text" placeholder="Full Name">
-                <input type="email" placeholder="Email">
-                <button type="submit">Send</button>
-            </form>
+                <h3>Newsletter</h3> <br>
+                <p>Get the latest updates and offers</p>
+                <form class="newsletter d-flex">
+                    <input type="text" placeholder="Full Name">
+                    <input type="email" placeholder="Email">
+                    <button type="submit">Send</button>
+                </form>
 
-            <div class="social">
-                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-twitter"></i></a>
-            </div>
+                <div class="social">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                </div>
             </div>
 
         </div>
@@ -126,5 +226,5 @@
             <p>2026 &copy; THETRIPBOOKING.com. All rights reserved.</p>
         </div>
     </footer>
-</body>
+
 </html>

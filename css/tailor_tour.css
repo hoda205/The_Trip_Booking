@@ -1,0 +1,371 @@
+/*
+/* X-Small devices (portrait phones, less than 576px)
+No media query for xs since this is the default in Bootstrap
+
+Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) { ... }
+*/
+
+:root{
+    --orange: rgb(248, 112, 96);
+    --dark-blue: #272635;
+    --gray: #ffffffbf;
+    --pinkish: #fff8f7f5;
+}
+
+/* =============Reset Styles ============= */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 0.8rem;
+}
+
+input,
+button,
+select,
+textarea {
+    font:inherit;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    min-height: 100vh;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+/* =============Global reset============= */
+
+.container{
+    width: 95%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero-section{
+    height: 65vh;
+    display: flex;
+    position: relative;
+}
+
+.hero-section img{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    object-fit: cover;
+    object-position: center 80%;
+}
+
+.explanation{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 35vh;
+}
+
+.small-title {
+    color: var(--dark-blue);
+    padding:  0 0 0 0.5vh;
+    font-size: 1.1rem;
+}
+
+.small-title::before {
+    content: "";
+    display: inline-block;
+    width: 30px;
+    height: 2px;
+    margin: 0 7px 0px 0px;
+    vertical-align: middle;
+    background-color: var(--dark-blue);
+}
+
+.explanation .main-title {
+    padding: 0 0 0.05vh;
+    color: var(--orange);
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+.explanation p {
+    color: var(--dark-blue);
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.explanation ul{
+    padding: 3vh 0 0;
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    font-size: 1.5rem;
+}
+
+.explanation ul li a {
+    color: var(--dark-blue);
+    transition: color 0.3s ease;
+}
+
+.explanation ul li a:hover {
+    color: var(--orange);
+}
+
+/* Social media icon circles */
+.icon-circle {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(10, 10, 10);
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    transition: 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-circle i {
+    font-size: 25px;
+    color: white;
+}
+
+.icon-circle:hover {
+    box-shadow: 0 0 2px 2px var(--orange);
+}
+
+.booking-form-section{
+    background-color: var(--pinkish);
+    min-height: 60vh;
+    padding: 2rem 0;
+}
+
+/* Mobile-first: Single column layout */
+.booking-form{
+    display: grid;
+    width: 100%;
+    gap: 1rem;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "form-box7"
+    "form-box8"
+    "form-box9"
+    "form-box10"
+    "form-box11"
+    "form-box12"
+    "form-box1"
+    "form-box2"
+    "form-box3"
+    "form-box4"
+    "form-box5"
+    "form-box6"
+    "form-box13";
+}
+
+.form-group{
+    display: grid;
+    gap: 0.2em;
+    margin-bottom: 1em;
+}
+
+.form-group input,.form-group select,.form-group textarea{
+    border: 2px solid black;
+    border-radius:0.5rem;
+    -webkit-border-radius:0.5rem;
+    -moz-border-radius:0.5rem;
+    -ms-border-radius:0.5rem;
+    -o-border-radius:0.5rem;
+    padding: 0.4em 0.75em;
+    width: 100%;
+}
+
+.booking-form-section h2{
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--dark-blue);
+    text-shadow: 2px 2px 8px rgb(255, 255, 255);
+    padding: 0.6em 0;
+}
+
+.form-actions .btn::before,
+.form-actions .btn::after{
+    border-color: var(--dark-blue);
+}
+.form-actions  .btn-before,
+.form-actions  .btn-after{
+    border-color: var(--dark-blue);
+}
+
+.btn{
+    color: black;
+}
+
+.btn:hover{
+    color: var(--orange);
+}
+.form-group label{
+    font-size: 1.5rem;
+}
+input, select{
+    height: 2.5rem;
+    background-color: white;
+}
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    .booking-form{
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+        "form-box7 form-box8"
+        "form-box9 form-box10"
+        "form-box11 form-box12"
+        "form-box1 form-box2"
+        "form-box3 form-box4"
+        "form-box5 form-box5"
+        "form-box6 form-box6"
+        "form-box13 form-box13";
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    html {
+        font-size: 0.9rem;
+    }
+
+    .container {
+        width: 90%;
+        max-width: 900px;
+    }
+
+    .hero-section-title {
+        font-size: 4rem;
+    }
+
+    .booking-form{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+        "form-box7 form-box8  form-box11"
+        "form-box9 form-box10 form-box12"
+        "form-box1 form-box2  form-box3"
+        "form-box4 form-box5  placeholder"
+        "form-box6 form-box  placeholder"
+        "form-box13 form-box13 form-box13";
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    html {
+        font-size: 1rem;
+    }
+
+    .container {
+        width: 85%;
+        max-width: 1000px;
+    }
+
+    .hero-section-title {
+        font-size: 4.5rem;
+    }
+
+    .explanation {
+        padding: 64px 0;
+    }
+
+    .booking-form{
+        grid-template-columns: 1.2fr 1.2fr 0.3fr 1fr 1fr;;
+        grid-template-areas:
+        "form-box7 form-box8  space      form-box11 form-box12"
+        "form-box9 form-box10 space      form-box3  form-box4"
+        "form-box1 form-box2  space      form-box5  placeholder"
+        "form-box6 form-box6  space      form-box13 placeholder";
+    }
+    .form-group label{
+        white-space: nowrap;
+    }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    html {
+        font-size: 1.1rem;
+    }
+
+    .container {
+        width: 80%;
+        max-width: 1100px;
+    }
+
+    .hero-section-title {
+        font-size: 5rem;
+    }
+
+    .booking-form{
+        grid-template-columns: 1.3fr 1.3fr 0.4fr 1fr 1fr;;
+        grid-template-areas:
+        "form-box7 form-box8  space      form-box11 form-box12"
+        "form-box9 form-box10 space      form-box3  form-box4"
+        "form-box1 form-box2  space      form-box5  placeholder"
+        "form-box6 form-box6  space      form-box13 placeholder";
+    }
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+    html {
+        font-size: 1.2rem;
+    }
+
+    .container {
+        width: 75%;
+        max-width: 1200px;
+    }
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575px) {
+    html {
+        font-size: 0.7rem;
+    }
+
+    .hero-section {
+        height: 50vh;
+    }
+
+    .hero-section-title {
+        font-size: 2.5rem;
+    }
+
+    .explanation .main-title {
+        font-size: 1.8rem;
+    }
+
+    .explanation p {
+        font-size: 1rem;
+    }
+
+    .explanation ul {
+        font-size: 1.3rem;
+        gap: 15px;
+    }
+    input, select{
+        height: 3rem;
+    }
+}
