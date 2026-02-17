@@ -285,7 +285,7 @@
 /* ======== Start Why Choose Section======== */
 .why-choose{
     
-    background-image: url(/assets/homePage/whychoose.png);
+    background-image: url('/assets/homePage/whychoose.png');
     background-attachment:fixed;
     background-repeat: no-repeat;
     background-size: cover;
