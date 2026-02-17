@@ -44,6 +44,10 @@
     padding-top: 15rem;
     font-size: 3rem;
 }
+
+.txt-contact h1, .txt-contact p{
+  text-shadow: 1px 1px 2px black;
+}
 /* ====Contact Section end=== */
 
 /* ====In Touch Section start=== */
@@ -100,13 +104,29 @@ label{
     font-size: 25px;
     margin-bottom: 20px;
 }
+.how-contact h2{
+    font-size: 1.25rem;
+}
+.how-contact p{
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.875rem;
+    margin-top: 1.5rem !important;
+}
+.how-contact span{
+    font-size: 1.25rem;
+    font-weight: 700;
+    display: block;
+}
 .desc-contact{
     font-size: 20px;
     margin-bottom: 25px;
 }
 .icon-contact{
-    font-size: 35px;
-    margin-right: 5px;
+    font-size: 2rem;
+    margin-right: 1.5rem;
+    position: relative;
+    top: .25rem;
 }
 .in-touch a{
     text-decoration: none;
@@ -224,3 +244,13 @@ label{
     .how-contact-txt{ font-size: 20px; }
     .desc-contact{ font-size: 14px; }
 }
+
+@media (max-width: 1025px){
+    .fullname, textarea, .email-phone input,
+    .country-nationality select{
+        width: 100%;
+    }
+
+    
+}
+
