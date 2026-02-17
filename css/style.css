@@ -14,6 +14,7 @@
 
 body{
     font-family: "Roboto", sans-serif;
+     position: relative;
 }
 a{
     text-decoration: none;
@@ -39,28 +40,61 @@ nav {
     height: auto;
     font-size: medium;
     gap: 250px;
+    overflow: visible;
 }
 nav a {
     padding-right: 2%;
     padding-left: 2%;
     font-size: 15px;
     transition: 0.2s;
+    flex-wrap: nowrap;
+    white-space: nowrap;
 }
 nav a:hover{
     color: var(--orange);
     cursor: pointer;
 }
-.txt-bold{
-    font-weight: bold;
-}
+
 nav a.active{
     color: var(--orange);
     text-decoration: underline;
 }
 
 .links{
-    width: 65%;
-    margin: 15px;
+    width: 90%;
+    margin: 1.5rem;
+    flex-wrap: nowrap;
+}
+.burger{
+  position: relative;
+  display: inline-block;
+  }
+
+.burger i{
+  margin-top: 1.57rem;
+  font-size: 1.25rem;
+  cursor: pointer;
+  margin-left: auto;
+}
+
+.burger:hover .menu-list{
+  display: flex;
+
+}
+.menu-list{
+  position: absolute;
+  top: 100%;
+  right:  0;
+  background: white;
+  display: none;
+  flex-direction: column;
+  padding: 10px;
+  margin: 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  z-index: 77777;
+}
+.menu-list a{
+  margin: .5rem;
 }
 
 .befor-title{
@@ -82,6 +116,10 @@ nav a.active{
 }
 
 /* =============Global Styles ============= */
+
+.txt-bold{
+    font-weight: bold;
+}
 .position-relative{
     position: relative;
 }
@@ -459,16 +497,10 @@ nav a.active{
 }
 
 /*--Header--*/
-@media (max-width: 768px) {
-  nav.d-flex {
-    flex-direction: column;
-    gap: 15px;
-  }
 
+@media (max-width: 1090px){
   .links {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+    display: none;
   }
 }
 
