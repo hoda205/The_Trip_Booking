@@ -128,6 +128,29 @@ a{
     color: var(--orange);
 }
 
+/* Social media icon circles */
+.icon-circle {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(10, 10, 10);
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    transition: 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-circle i {
+    font-size: 25px;
+    color: white;
+}
+
+.icon-circle:hover {
+    box-shadow: 0 0 2px 2px var(--orange);
+}
+
 .booking-form-section{
     background-color: var(--pinkish);
     min-height: 60vh;
@@ -246,114 +269,6 @@ input, select{
         "form-box13 form-box13 form-box13";
     }
 }
-
-/*
-.fullname{
-    width: 700px;
-    height: 45px;
-    border-radius: 10px;
-    border: 1px rgba(194, 71, 71, 0.685) solid;
-    padding: 15px;
-}
-.email-phone,
-.country-nationality {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    width: 100%;
-}
-
-.email-phone input,
-.country-nationality select {
-    flex: 1 1 200px;
-    min-width: 150px;
-}
-
-.gap-label{
-    gap: 10px;
-}
-.email-phone input , .country-nationality select{
-    width: 345px;
-    height: 45px;
-    border-radius: 10px;
-    border: 1px rgba(194, 71, 71, 0.685) solid;
-    padding: 15px;
-}
-input:focus, textarea:focus, select:focus{
-    outline: none;
-}
-textarea{
-    height: 136px;
-    width: 700px;
-    border-radius: 10px;
-    border: 1px rgba(194, 71, 71, 0.685) solid;
-    padding: 15px;
-}
-label{
-    padding: 15px;
-}
-
-
-.how-contact-txt{
-    font-size: 25px;
-    margin-bottom: 20px;
-}
-.desc-contact{
-    font-size: 20px;
-    margin-bottom: 25px;
-}
-.icon-contact{
-    font-size: 35px;
-    margin-right: 5px;
-}
-.in-touch a{
-    text-decoration: none;
-    color: black;
-    cursor: pointer;
-    transition: all 0.15s;
-}
-.in-touch a:hover{
-    color: var(--orange);
-}
-.socials{
-    padding-top: 15px;
-    margin: 35px;
-}
-.icon-circle{
-    width: 50px;
-    height: 50px;
-    background-color:rgb(10, 10, 10);
-    border-radius: 50%;
-    cursor: pointer;
-    position: relative;
-    transition: 0.2s;
-}
-.icon-circle i{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    font-size: 25px;
-    display: block;
-    color: white;
-    transform: translate(-50%, -50%);
-}
-.icon-circle:hover{
-    box-shadow: 0 0 2px 2px var(--orange);
-}
-.in-touch .btn{
-    color: black;
-}
-.in-touch .btn::before,
-.in-touch .btn::after{
-    border: 2px solid black;
-}
-.in-touch .btn .btn-before,
-.in-touch .btn .btn-after{
-    border: 1px solid black;
-}
-
-*/
-
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
