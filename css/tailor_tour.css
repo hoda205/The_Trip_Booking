@@ -54,8 +54,10 @@ a{
     color: black;
 }
 /* =============Global reset============= */
-
-.container{
+ .contact-img{
+    background-image: url('../assets/Tailor Tour/Tailor_a_tour_hero_section_image.jpg');
+}
+/* .container{
     width: 95%;
     max-width: 1200px;
     margin: 0 auto;
@@ -73,22 +75,22 @@ a{
     position: absolute;
     object-fit: cover;
     object-position: center 80%;
-}
+} */
 
-.explanation{
+/* .explanation{
     display: flex;
     flex-direction: column;
     justify-content: center;
     min-height: 35vh;
-}
+} */
 
-.small-title {
+/* .small-title {
     color: var(--dark-blue);
     padding:  0 0 0 0.5vh;
     font-size: 1.1rem;
-}
+} */
 
-.small-title::before {
+/* .small-title::before {
     content: "";
     display: inline-block;
     width: 30px;
@@ -126,10 +128,10 @@ a{
 
 .explanation ul li a:hover {
     color: var(--orange);
-}
+} */
 
 /* Social media icon circles */
-.icon-circle {
+/* .icon-circle {
     width: 50px;
     height: 50px;
     background-color: rgb(10, 10, 10);
@@ -149,7 +151,7 @@ a{
 
 .icon-circle:hover {
     box-shadow: 0 0 2px 2px var(--orange);
-}
+} */
 
 .booking-form-section{
     background-color: var(--pinkish);
@@ -186,20 +188,21 @@ a{
 }
 
 .form-group input,.form-group select,.form-group textarea{
-    border: 2px solid black;
-    border-radius:0.5rem;
-    -webkit-border-radius:0.5rem;
-    -moz-border-radius:0.5rem;
-    -ms-border-radius:0.5rem;
-    -o-border-radius:0.5rem;
-    padding: 0.4em 0.75em;
+    padding: 0.5rem 0.75rem;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.25;
+    height: 2.625rem;
+    color: black;
+    border: 1px solid #27263540;
+    border-radius:0.25rem;
     width: 100%;
 }
 
 .booking-form-section h2{
-    font-size: 2rem;
-    font-weight: 700;
-    color: var(--dark-blue);
+    /* font-size: 2rem; */
+    /* font-weight: 700; */
+    /* color: var(--dark-blue); */
     text-shadow: 2px 2px 8px rgb(255, 255, 255);
     padding: 0.6em 0;
 }
@@ -221,7 +224,10 @@ a{
     color: var(--orange);
 }
 .form-group label{
-    font-size: 1.5rem;
+    font-size: 1rem;
+    margin: 0 0 0.25rem 0.5rem;
+    padding: 0;
+    font-weight: 300;
 }
 input, select{
     height: 2.5rem;
@@ -297,9 +303,9 @@ input, select{
         "form-box1 form-box2  space      form-box5  placeholder"
         "form-box6 form-box6  space      form-box13 placeholder";
     }
-    .form-group label{
+    /* .form-group label{
         white-space: nowrap;
-    }
+    } */
 }
 
 /* X-Large devices (large desktops, 1200px and up) */
