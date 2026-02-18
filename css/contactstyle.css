@@ -174,8 +174,15 @@ label{
 .in-touch .btn .btn-after{
     border: 1px solid var(--dark-blue);
 }
-
-
+.in-touch .hear{
+    gap: 2rem;
+}
+.how-contact{
+    padding-bottom: 1rem;
+}
+.contacts{
+    padding-top: 0 !important;
+}
 /* =======Responsive Styles (Media Queries)=========== */
 
 /* -------- Tablet / Small Desktop -------- */
